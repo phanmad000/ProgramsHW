@@ -1,0 +1,69 @@
+<html>
+<head></head>
+
+<body>
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<rect id="background" fill="#5C99D2" stroke="#000000" stroke-miterlimit="10" width="612" height="792"/>
+<path id="red" onclick="callRed()" fill="#D32027" stroke="#000000" stroke-miterlimit="10" d="M158,512.833c0,6.627-5.373,12-12,12H60c-6.627,0-12-5.373-12-12
+	v-47c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V512.833z"/>
+<path id="orange" onclick="callOrange()" fill="#FBA919" stroke="#000000" stroke-miterlimit="10" d="M286,512.833c0,6.627-5.373,12-12,12h-82c-6.627,0-12-5.373-12-12
+	v-47c0-6.627,5.373-12,12-12h82c6.627,0,12,5.373,12,12V512.833z"/>
+<path id="yellow" onclick="callYellow()" fill="#DEE21E" stroke="#000000" stroke-miterlimit="10" d="M416,512.833c0,6.627-5.373,12-12,12h-86c-6.627,0-12-5.373-12-12
+	v-47c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V512.833z"/>
+<path id="green" onclick="callGreen()" fill="#007F4F" stroke="#000000" stroke-miterlimit="10" d="M156,621.75c0,6.627-5.178,12-11.563,12H61.563
+	c-6.386,0-11.563-5.373-11.563-12v-47c0-6.627,5.177-12,11.563-12h82.873c6.386,0,11.563,5.373,11.563,12V621.75z"/>
+<path id="blue" onclick="callBlue()" fill="#27398A" stroke="#000000" stroke-miterlimit="10" d="M286,621.75c0,6.627-5.275,12-11.782,12h-84.437
+	c-6.507,0-11.782-5.373-11.782-12v-47c0-6.627,5.275-12,11.782-12h84.437c6.506,0,11.782,5.373,11.782,12V621.75z"/>
+<path id="purple" onclick="callPurple()" fill="#4F2367" stroke="#000000" stroke-miterlimit="10" d="M414,621.75c0,6.627-5.178,12-11.563,12h-82.873
+	c-6.386,0-11.563-5.373-11.563-12v-47c0-6.627,5.178-12,11.563-12h82.873c6.386,0,11.563,5.373,11.563,12V621.75z"/>
+<rect x="483" y="437.5" fill="#467CBF" stroke="#000000" stroke-miterlimit="10" width="70" height="66"/>
+<rect x="483" y="610.75" fill="#467CBF" stroke="#000000" stroke-miterlimit="10" width="70" height="146.25"/>
+<path fill="#FFFEFE" stroke="#000000" stroke-miterlimit="10" d="M286,734c0,6.627-5.275,12-11.782,12h-84.437
+	c-6.506,0-11.782-5.373-11.782-12v-47c0-6.627,5.275-12,11.782-12h84.437c6.506,0,11.782,5.373,11.782,12V734z"/>
+<path stroke="#000000" stroke-miterlimit="10" d="M416,734c0,6.627-5.373,12-12,12h-86c-6.627,0-12-5.373-12-12v-47
+	c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V734z"/>
+<path fill="#463413" stroke="#000000" stroke-miterlimit="10" d="M158,734c0,6.627-5.373,12-12,12H60c-6.627,0-12-5.373-12-12v-47
+	c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V734z"/>
+<rect x="483" y="522.25" fill="#467CBF" stroke="#000000" stroke-miterlimit="10" width="70" height="66"/>
+<rect x="55" y="348.699" fill="#B5A8D2" stroke="#000000" stroke-miterlimit="10" width="155" height="66"/>
+<rect x="244" y="348.699" fill="#B5A8D2" stroke="#000000" stroke-miterlimit="10" width="149" height="66"/>
+<rect x="428" y="348" fill="#B5A8D2" stroke="#000000" stroke-miterlimit="10" width="139" height="66"/>
+<ellipse id="oo-color" onclick="callOnOff()" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" cx="306" cy="215.5" rx="140" ry="110.5"/>
+<text transform="matrix(0.9211 0 0 1 93.999 390.6992)" font-family="'HanziPenTC-W3-83pv-RKSJ-H'" font-size="30.1996">Restart</text>
+<text transform="matrix(0.9211 0 0 1 259.999 390.6992)" font-family="'HanziPenTC-W3-83pv-RKSJ-H'" font-size="30.1996">Backspace</text>
+<text transform="matrix(0.9211 0 0 1 452 390.6992)" font-family="'HanziPenTC-W3-83pv-RKSJ-H'" font-size="30.1996">On/Off</text>
+<polygon fill="#8FC73E" stroke="#000000" stroke-miterlimit="10" points="511.111,463.833 510.944,451.667 527.277,451.667
+	527.277,463.833 539.222,463.833 539.222,478.167 527.279,478.333 527.279,489.333 510.279,489.333 510.279,478.333
+	496.779,478.167 496.779,463.667 "/>
+<rect x="497.5" y="545.25" fill="#8FC73E" stroke="#000000" stroke-miterlimit="10" width="42.442" height="17.5"/>
+<rect x="497.5" y="657" fill="#8FC73E" stroke="#000000" stroke-miterlimit="10" width="42.442" height="18"/>
+<rect x="497.5" y="680.031" fill="#8FC73E" stroke="#000000" stroke-miterlimit="10" width="42.442" height="17.719"/>
+<text id="title" transform="matrix(1 0 0 1 119 81)" font-family="'HanziPenTC-W3-83pv-RKSJ-H'" font-size="60">Color Calculator</text>
+</svg>
+
+<script>
+  function callOnOff(){
+    if "oo-color" = #FFFFFF;
+      document.getElementById('oo-color').setAttribute('fill', '#D3D3D3');
+      callColors()
+    if "oo-color" = #D3D3D3;
+      document.getElementById('oo-color').setAttribute('fill', 'FFFFFF');
+  
+  function callColors(){
+    function callRed(){
+      document.getElementById('oo-color').setAttribute('fill', 'D32027');
+    function callOrange(){
+      document.getElementById('oo-color').setAttribute('fill', 'FBA919');
+    function callYellow(){
+      document.getElementById('oo-color').setAttribute('fill', 'DEE21E');
+    function callGreen(){  
+      document.getElementById('oo-color').setAttribute('fill', 'FFFFFF');
+</script>
+
+</body>
+</html>
