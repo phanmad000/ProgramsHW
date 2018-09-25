@@ -9,20 +9,25 @@
 	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
 <rect id="background" fill="#5C99D2" stroke="#000000" stroke-miterlimit="10" width="612" height="792" />
 <path id="red" onclick="pickColor(1)" fill="#D32027" stroke="#000000" stroke-miterlimit="10" d="M158,512.833c0,6.627-5.373,12-12,12H60c-6.627,0-12-5.373-12-12 v-47c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V512.833z" 
-	onmouseover="document.getElementById('red').setAttribute('fill', 'F17D78'); document.getElementById('red').setAttribute('stroke', '#ccc'); document.getElementById('red').setAttribute('stroke-width', '3');"/>
-	console.log(red)
+	onmouseover="document.getElementById('red').setAttribute('fill', 'F17D78'); document.getElementById('red').setAttribute('stroke', '#ccc'); document.getElementById('red').setAttribute('stroke-width', '3');"
+      	onmouseout="document.getElementById('red').setAttribute('fill', '#D32027'); document.getElementById('red').setAttribute('stroke', '#000000'); document.getElementById('red').setAttribute('stroke-width', '10');"/>
+	
 <path id="yellow" onclick="pickColor(10)" fill="#DEE21E" stroke="#000000" stroke-miterlimit="10" d="M416,512.833c0,6.627-5.373,12-12,12h-86c-6.627,0-12-5.373-12-12
 	v-47c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V512.833z"
-	onmouseover="document.getElementById('yellow').setAttribute('fill', '#E0E66C'); document.getElementById('yellow').setAttribute('stroke', '#ccc'); document.getElementById('yellow').setAttribute('stroke-width', '3');"/>
+	onmouseover="document.getElementById('yellow').setAttribute('fill', '#E0E66C'); document.getElementById('yellow').setAttribute('stroke', '#ccc'); document.getElementById('yellow').setAttribute('stroke-width', '3');"
+      	onmouseout="document.getElementById('yellow').setAttribute('fill', 'DEE21E'); document.getElementById('yellow').setAttribute('stroke', '#000000'); document.getElementById('yellow').setAttribute('stroke-width', '10');"/>
 <path id="blue" onclick="pickColor(100)" fill="#5374E3" stroke="#000000" stroke-miterlimit="10" d="M286,621.75c0,6.627-5.275,12-11.782,12h-84.437
 	c-6.507,0-11.782-5.373-11.782-12v-47c0-6.627,5.275-12,11.782-12h84.437c6.506,0,11.782,5.373,11.782,12V621.75z"
 	onmouseover="document.getElementById('blue').setAttribute('fill', '#00f'); document.getElementById('blue').setAttribute('stroke', '#ccc'); document.getElementById('blue').setAttribute('stroke-width', '3');"/>
+	onmouseout="document.getElementById('blue').setAttribute('fill', '#5374E3'); document.getElementById('blue').setAttribute('stroke', '#000000'); document.getElementById('blue').setAttribute('stroke-width', '10');"
 <path id="white" onclick="pickColor(1000)" fill="#FFFFFF" stroke="#000000" stroke-miterlimit="10" d="M286,734c0,6.627-5.275,12-11.782,12h-84.437
 	c-6.506,0-11.782-5.373-11.782-12v-47c0-6.627,5.275-12,11.782-12h84.437c6.506,0,11.782,5.373,11.782,12V734z"
-	onmouseover="document.getElementById('white').setAttribute('fill', '#E7E7E3'); document.getElementById('white').setAttribute('stroke', '#ccc'); document.getElementById('white').setAttribute('stroke-width', '3');"/>
+	onmouseover="document.getElementById('white').setAttribute('fill', '#E7E7E3'); document.getElementById('white').setAttribute('stroke', '#ccc'); document.getElementById('white').setAttribute('stroke-width', '3');
+	onmouseout="document.getElementById('white').setAttribute('fill', '#FFFFFF'); document.getElementById('white').setAttribute('stroke', '#000000'); document.getElementById('white').setAttribute('stroke-width', '10');""/>
 <path id="black" onclick="pickColor(10000)" stroke="#000000" stroke-miterlimit="10" d="M416,734c0,6.627-5.373,12-12,12h-86c-6.627,0-12-5.373-12-12v-47
 	c0-6.627,5.373-12,12-12h86c6.627,0,12,5.373,12,12V734z"
-	onmouseover="document.getElementById('black').setAttribute('fill', '#434342'); document.getElementById('black').setAttribute('stroke', '#ccc'); document.getElementById('black').setAttribute('stroke-width', '3');"/>
+	onmouseover="document.getElementById('black').setAttribute('fill', '#434342'); document.getElementById('black').setAttribute('stroke', '#ccc'); document.getElementById('black').setAttribute('stroke-width', '3');"
+      onmouseout="document.getElementById('black').setAttribute('fill', '#000000'); document.getElementById('black').setAttribute('stroke', '#000000'); document.getElementById('black').setAttribute('stroke-width', '10');"/>
 <rect id="restartBack" onclick="callRestart()" x="235" y="380.699" fill="#B5A8D2" stroke="#000000" stroke-miterlimit="10" width="155" height="66"/>
 <ellipse id="oo-color" fill="#ffffff" stroke="#000000" stroke-miterlimit="10" cx="306" cy="215.5" rx="140" ry="110.5"/>
 <text transform="matrix(0.9211 0 0 1 50.999 364.6992)" font-family="'HanziPenTC-W3-83pv-RKSJ-H'" font-size="20.1996">Click Two Colors to See What They Make When Combined Together!</text>
@@ -86,7 +91,6 @@ value1 = 0
 
 		function callRestart(){
 			document.getElementById('oo-color').setAttribute('fill', '#FFFFFF');
-			document.getElementById('red').setAttribute('fill', '#D32027'); document.getElementById('red').setAttribute('stroke', '#000000'); document.getElementById('red').setAttribute('stroke-width', '10');
 			value1 = 0;
 			value2 = 0;
 			num = 0;
