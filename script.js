@@ -2,18 +2,17 @@
 
 function init()
 {
-  document.getElementById("textOutput").innerHTML = "Enter your name and then click the button.";
+  var bib = document.getElementById("textEntry").value;
+  document.getElementById("textOutput").innerHTML = "Citation: <br>- ";
 }
 
 function clickButton()
-{
-  var name = document.getElementById("textEntry").value;
-  
-  document.getElementById("textOutput").innerHTML = createGreeting(name);
+{  
+  document.getElementById("textOutput").innerHTML = createCitation(bib);
 }
 
-function createGreeting(newName)
+function createCitation(newBib)
 {
-  var greeting = "Hello, " + newName + "!"; 
-  return greeting;
+  var citation = "Hello, " + newBib + "!"; 
+  return citation;
 }
