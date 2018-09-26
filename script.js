@@ -2,17 +2,18 @@
 
 function init()
 {
-  var bib = document.getElementById("textEntry").value;
+  var title = document.getElementById("textEntry").value;
+  var url = document.getElementById("textUrl").value;
   document.getElementById("textOutput").innerHTML = "Citation: <br>- ";
 }
 
 function clickButton()
 {  
-  document.getElementById("textOutput").innerHTML = createCitation(bib);
+  document.getElementById("textOutput").innerHTML = createCitation(title, url);
 }
 
-function createCitation(newBib)
+function createCitation(newTitle, newUrl)
 {
-  var citation = "Hello, " + newBib + "!"; 
+  var citation = '"' + title + '",' + url + '.'; 
   return citation;
 }
