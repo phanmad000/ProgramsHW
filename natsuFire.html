@@ -1,0 +1,49 @@
+<html>
+  <head><title>Natsu Dragneel!</title></head>
+  <body>
+    <audio>
+    <source id="soundfile" src="audio/laser.mp3"></source>
+    </audio>
+
+<?xml version="1.0"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <image transform="matrix(0 0.996968 -0.996968 0 474.949 -24.9399)" xlink:href="space.jpg" id="svg_1" height="657.635583" width="578.000024" y="-105.917208" x="-39.275578"/>
+  <image xlink:href="cat-face.png" id="cat-face" height="300" width="300" y="-20" x="285"/>  
+
+  <line id="lazer" x1="380" y1="120" x2="380" y2="120" style="stroke:rgb(255,0,255);stroke-width:5" />
+  <line id="lazer2" x1="490" y1="120" x2="490" y2="120" style="stroke:rgb(255,0,255);stroke-width:5" />
+  <image xlink:href="boom.png" id="booom" height="200" width="200" y="-60" x="820"/>
+
+  
+ </g>
+</svg><br>
+Height of Destruction! <br><input type="text" id="tacosY" value="choose between 0-100"><br>
+<input type="submit" name="submit-values" value="--DESTROY!!!1--" onclick="kaBloom()">
+
+<script>
+var audio = document.getElementsByTagName("audio")[0];
+
+function kaBloom(){
+  var lazerY = 4 * document.getElementById('tacosY').value;
+  document.getElementById('lazer').setAttribute('x1', 90);
+  document.getElementById('lazer2').setAttribute('x1', 90);
+  document.getElementById('lazer').setAttribute('y1', lazerY);
+  document.getElementById('lazer2').setAttribute('y1', lazerY);
+  document.getElementById('booom').setAttribute('x', -20);
+  document.getElementById('booom').setAttribute('y', lazerY - 100);
+  audio.play();
+}
+
+</script>
+
+</body>
+</html>
