@@ -266,6 +266,7 @@
 
   <path id="className1" onclick="changeClass(1)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.9 506.89h77.231v32.33H.9z"/>
       <path id="asName1" onclick="changeAs(1)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 507.174h222.745v32.33H79.582z"/>
+      <text transform="translate(14.166 529.33)" font-family="'OratorStd-Slanted'" font-size="20">Math</text>
   <path id="className2" onclick="changeClass(2)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 540.687h77.232v32.33H.785z"/>
     <path id="asName2" onclick="changeAs(2)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 540.387h222.745v32.33H79.582z"/>
   <path id="className3" onclick="changeClass(3)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 573.585h77.232v32.33H.785z"/>
@@ -361,11 +362,11 @@
     <path d="M464.957 371.303c0 1.41-1.588 2.553-3.542 2.553-1.957 0-3.545-1.143-3.545-2.553s1.588-2.552 3.545-2.552c1.954-.001 3.542 1.142 3.542 2.552z"/>
   </g>
 
-<g id="events">
+<g id="events" transform="matrix(1.012 0 0 1 0 -200)">
   <path id="eMake" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M610.097 940.856c0 6.981-5.957 12.644-13.308 12.644H316.291c-7.351 0-13.309-5.662-13.309-12.644V690.989c0-6.983 5.958-12.643 13.309-12.643h280.498c7.351 0 13.308 5.659 13.308 12.643v249.867z"/>
 
 
-  <foreignobject id="eventName" fill="#FFF" stroke="#000" stroke-miterlimit="10" x="325" y="500">
+  <foreignobject id="eventName" fill="#FFF" stroke="#000" stroke-miterlimit="10" x="325" y="700">
     <input type="text" id="eventN" value="Event Name" size="35" maxlength="25"/>
   </foreignobject>
   <text transform="matrix(1.0912 0 0 1 478.838 734.225)" font-family="'Superclarendon-Regular'" font-size="10">ALL DAY</text>
@@ -374,38 +375,51 @@
   <path id="allDayBu" onclick="allDay()" fill="#E6E7E8" stroke="#BCBEC0" stroke-miterlimit="10" d="M565.188 728.861c0 4.08-3.609 7.387-8.062 7.387h-7.947c-4.451 0-8.061-3.307-8.061-7.387 0-4.079 3.609-7.386 8.061-7.386h7.947c4.452.001 8.062 3.307 8.062 7.386z"/>
 </g>
   <path id="timeBox" fill="#FFF" stroke="#000" stroke-miterlimit="10" d="M588.547 788.161c0 4.921-5.862 8.911-13.096 8.911H340.902c-7.231 0-13.095-3.99-13.095-8.911v-34.754c0-4.921 5.863-8.911 13.095-8.911h234.549c7.233 0 13.096 3.99 13.096 8.911v34.754z"/>
-  <text id="eDay" onclick="changeDate()" transform="matrix(1.0912 0 0 1 338.642 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE, </text>
-  <text id="eMon" onclick="changeDate()" transform="matrix(1.0912 0 0 1 370.642 760)" font-family="'Superclarendon-Regular'" font-size="9">NOV</text>
-  <text id="eD" onclick="changeDate()" transform="matrix(1.0912 0 0 1 398.642 760)" font-family="'Superclarendon-Regular'" font-size="9">14,</text>
-  <text id="eYear" onclick="changeDate()" transform="matrix(1.0912 0 0 1 417.642 760)" font-family="'Superclarendon-Regular'" font-size="9">2018</text>
+  <text id="eDay" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 338.642 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE, </text>
+  <text id="eMon" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 370.642 760)" font-family="'Superclarendon-Regular'" font-size="9">NOV</text>
+  <text id="eD" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 398.642 760)" font-family="'Superclarendon-Regular'" font-size="9">14,</text>
+  <text id="eYear" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 417.642 760)" font-family="'Superclarendon-Regular'" font-size="9">2018</text>
   <text transform="matrix(1.0912 0 0 1 342.46 787)">
-  <tspan id="firstTime" onclick="changeTime1()" x="0" y="0" font-family="'Superclarendon-Regular'" font-size="29">8:00</tspan>
-  <tspan id="firstTD" onclick="changeTime1()" x="69.657" y="0" font-family="'Superclarendon-Regular'" font-size="11">AM</tspan>
+  <tspan id="firstTime" onclick="changeTime(1)" x="0" y="0" font-family="'Superclarendon-Regular'" font-size="29">8:00</tspan>
+  <tspan id="firstTD" onclick="changeTime(1)" x="69.657" y="0" font-family="'Superclarendon-Regular'" font-size="11">AM</tspan>
   </text>
 
-  <path fill="none" stroke="#000" stroke-miterlimit="10" d="M457.021 765.5l12.42 7.716M469.441 773.216L457.631 781"/>
+  <path id="timeArrow" fill="none" stroke="#000" stroke-miterlimit="10" d="M457.021 765.5l12.42 7.716M469.441 773.216L457.631 781"/>
 
-  <text transform="matrix(1.0912 0 0 1 475.048 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE, NOV 14, 2018</text>
-  <text transform="matrix(1.0912 0 0 1 479.665 786.95)">
+  <text id="eDay2" onclick="changeDate(2)" transform="matrix(1.0912 0 0 1 475.048 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE,</text>
+  <text id="eMon2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 505.048 760)" font-family="'Superclarendon-Regular'" font-size="9">NOV</text>
+  <text id="eD2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 532 760)" font-family="'Superclarendon-Regular'" font-size="9">14, </text>
+  <text id="eYear2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 550 760)" font-family="'Superclarendon-Regular'" font-size="9">2018</text>
+  <text id="time2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 479.665 786.95)">
   <tspan x="0" y="0" font-family="'Superclarendon-Regular'" font-size="29">9:00</tspan>
   <tspan x="69.367" y="0" font-family="'Superclarendon-Regular'" font-size="11">AM</tspan>
   </text>
-  <path fill="#B467A9" stroke="#000" stroke-miterlimit="10" d="M583.606 713.474l-7.491-3.244-7.044 3.997.915-7.739-6.215-5.124 8.057-1.54 3.202-7.163 4.065 6.786 8.194.699-5.544 5.733z"/>
+  <path id="eventStar" onclick="favoriteE()" fill="#B467A9" stroke="#000" stroke-miterlimit="10" d="M583.606 713.474l-7.491-3.244-7.044 3.997.915-7.739-6.215-5.124 8.057-1.54 3.202-7.163 4.065 6.786 8.194.699-5.544 5.733z"/>
+
+  <g id="reminder">
   <path fill="#8BAFC5" stroke="#000" stroke-miterlimit="10" d="M326.521 803.114h81.415V829h-81.415z"/>
   <text transform="matrix(1.0912 0 0 1 338.642 819)" font-family="'Superclarendon-Regular'" font-size="9">Reminder:</text>
-  <path fill="#AFC5D5" stroke="#000" stroke-miterlimit="10" d="M407.937 803.114h148.409V829H407.937z"/>
-  <path fill="#A7A9AC" stroke="#000" stroke-miterlimit="10" d="M556.346 803.114h30.002V829h-30.002z"/>
-  <path fill="#58595B" stroke="#000" stroke-miterlimit="10" d="M563.771 810.258h16.583L572.062 822z"/>
-  <path fill="#A8C8A5" stroke="#000" stroke-miterlimit="10" d="M407.937 833.5H587.29v25H407.937z"/>
+  <path id="reminderBox" fill="#AFC5D5" stroke="#000" stroke-miterlimit="10" d="M407.937 803.114h148.409V829H407.937z"/>
+  <path id="arrowBox" onclick="remE()" fill="#A7A9AC" stroke="#000" stroke-miterlimit="10" d="M556.346 803.114h30.002V829h-30.002z"/>
+  <path id="arrowR" onclick="remE()" fill="#58595B" stroke="#000" stroke-miterlimit="10" d="M563.771 810.258h16.583L572.062 822z"/>
+
+  <foreignobject x="410" y="832">
+  <input type="text" id="eventLocation" value="" size="28" maxlength="25" style="color: #000; background-color: #A8C8A5; line-height:1.9em"/>
+  </foreignobject>
   <path fill="#81B382" stroke="#000" stroke-miterlimit="10" d="M326.521 833.5h81.415v25h-81.415z"/>
   <text transform="matrix(1.0912 0 0 1 343.006 847.5)" font-family="'Superclarendon-Regular'" font-size="9">Location:</text>
+
   <path fill="#86839A" stroke="#000" stroke-miterlimit="10" d="M326.779 862.75h81.157V886h-81.157z"/>
   <text transform="matrix(1.0912 0 0 1 346.825 877.5)" font-family="'Superclarendon-Regular'" font-size="9">Repeat:</text>
-  <path fill="#A7A4B4" stroke="#000" stroke-miterlimit="10" d="M407.937 862.75H587.29V886H407.937z"/>
+  <foreignobject x="410" y="860">
+  <input style="color=#000; background-color:#A7A4B4; line-height:1.9em" value="" size="28" maxlength="25" />
+</foreignobject>
+
   <path fill="#C5AF8F" stroke="#000" stroke-miterlimit="10" d="M326.779 890.75h81.157V914h-81.157z"/>
-  <path fill="#E4DACB" stroke="#000" stroke-miterlimit="10" d="M407.937 890.75H587.29v49.75H407.937z"/>
+  <foreignobject x="410" y="890">
+  <input style="background-color:#E4DACB; color: #000; line-height:3.1em" value=""  size="28" maxlength="25"/>
+</foreignobject>
   <text transform="matrix(1.0912 0 0 1 350.644 904.5)" font-family="'Superclarendon-Regular'" font-size="9">Notes:</text>
-  <text transform="translate(14.166 529.33)" font-family="'OratorStd-Slanted'" font-size="20">Math</text>
-  <path stroke="#000" stroke-miterlimit="10" d="M565.695 99.237l13.825 6.75-13.825 7.678zM567.05 490.098l13.824 6.75-13.824 7.676zM-104.818 139.037l13.824 6.75-13.824 7.676zM347.89 113.338l-13.885-6.627 13.756-7.799zM349.273 505.2l-13.884-6.627 13.756-7.8zM-323.279 152.238l-13.885-6.627 13.756-7.799z"/>
+
 </g>
 </svg>
