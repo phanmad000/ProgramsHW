@@ -35,10 +35,51 @@
   <!--<g id="settingsButton" onclick="settings()" transform="translate(130 120)">-->
 </g>
 
+<g id="plusA" onclick="addAs()" stroke="#000" stroke-width="2" stroke-miterlimit="10">
+<path id="plusBackA" onclick="addAs()" fill="#A09BCC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M234.679 444h31.754v29h-31.754z"/>
+<g fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10">
+<path d="M250.556 449.503v15.996M241.353 457.5h18.407"/> </g>
+</g>
+
+<g id="trashA" onclick="deleteAs()" stroke="#000" stroke-width="2" stroke-miterlimit="10">
+  <path fill="#D1C59C" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M266.433 444h37.649v29.535h-37.649z"/>
+  <path fill="#939598" d="M277.127 452.88h16.26v2.408h-16.26z"/>
+  <path fill="#A7A9AC" d="M278.986 455.288h13.008v13.078h-13.008z"/>
+  <path fill="#939598" d="M284.25 449.633h2.943v2.879h-2.943z"/>
+  <path fill="none" d="M280.147 456.36v11.119M283.864 456.503v11.118M287.193 456.543v11.118M290.6 456.503v11.118"/>
+</g>
 
 
-<g id="menu" transform="translate(-275 375)"> <!-- -5 25-->
-  <g id="settingsButton" onclick="settings()" transform="translate(0 0)">
+
+<g id="plusR" onclick="addRem()" stroke="#000" stroke-width="2" stroke-miterlimit="10">
+<path  fill="#A09BCC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M246.658 55.187h29.957v24.335h-29.957z"/>
+<path fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M262.555 59.357v15.997M253.377 67.354h18.356"/>
+<path fill="#A09BCC" d="M545.482 445.886h28.427v25.096h-28.427z"/>
+</g>
+
+<g id="trashR" onclick="deleteRem()" stroke="#000" stroke-width="2" stroke-miterlimit="10">
+  <path fill="#939598" d="M283.824 61.236h16.214v2.408h-16.214z"/>
+  <path fill="#A7A9AC" d="M285.677 63.644h12.972v13.078h-12.972z"/>
+  <path fill="#939598" d="M290.928 57.989h2.935v2.879h-2.935z"/>
+  <path fill="none" d="M286.836 64.716v11.118M290.541 64.859v11.118M293.862 64.899v11.118M297.259 64.859v11.118"/>
+</g>
+
+
+<g id="plusE" onclick="addEv()" fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10">
+  <path d="M560.264 450.126v17.757M548.895 459.003h22.74"/>
+</g>
+
+<g id="trashE" onclick="deleteEv()" stroke="#000" stroke-width="2" stroke-miterlimit="10">
+<path fill="#D1C59C" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M573.909 445.886H612V471h-38.091z"/>
+<path fill="#939598" d="M582.627 451.641h20.087v2.673h-20.087z"/>
+<path fill="#A7A9AC" d="M584.924 454.313h16.068v14.518h-16.068z"/>
+<path fill="#939598" d="M591.427 448.036h3.636v3.196h-3.636z"/>
+<path fill="none" d="M586.357 455.504v12.342M590.949 455.662v12.342M595.062 455.707v12.341M599.271 455.662v12.342"/>
+</g>
+
+
+<g id="menu" transform="translate(0 0)"> <!--0 0-->
+  <g id="settingsButton" onclick="settings()" transform="translate(140 120)">
     <!---140 120-->
   <path fill="#CCC4E3" onclick="settings()" stroke="#000" stroke-miterlimit="10" d="M-367.244 1.603h50.965v49.389h-50.965z"/>
     <path id="settings" onclick="settings()" d="M-339.532 17.719c-.133-1.642-1.138-3.187-1.679-4.72-.089-.251-.313-.479-.603-.459-1.261.084-2.771.613-3.754 1.425-.21.173-.234.536-.098.757 1.201 1.938 2.762 3.578 4.14 5.382.482.631 1.569.01 1.08-.631-1.378-1.802-2.941-3.447-4.14-5.382l-.098.757c.704-.582 1.962-.998 2.869-1.059l-.603-.459c.491 1.394 1.514 2.899 1.634 4.388.066.799 1.316.805 1.252.001z
@@ -56,12 +97,12 @@
     <text transform="translate(-352.83 46.435)" font-family="'MyriadPro-Regular'" font-size="6.624">Settings</text>
 </g>
 
-<g id="timerbutton" onclick="timer()" transform="translate(10 180)"> <!---10 180-->
+<!--<g id="timerbutton" onclick="timer()" transform="translate(-500)"> -10 180
   <path onclick="timer()" fill="#CAE3C4" stroke="#000" stroke-miterlimit="10" d="M-316.804 1.896h50.038v49.096h-50.038z"/>
     <path id="timer" onclick="timer()" d="M-287.971 12.311c-5.543-7.964-15.242 2.241-18.17 7.493-2.218 3.979-3.036 8.727-1.153 12.972 2.382 5.37 9.37 7.119 14.597 7.667 10.318 1.081 18.325-6.419 17.42-16.78-.907-10.388-10.326-15.678-19.969-13.827-.791.152-.455 1.356.332 1.205 8.666-1.664 16.315 2.564 18.202 11.406 1.784 8.361-3.76 15.749-12.105 16.742-10.009 1.191-21.058-4.872-17.464-15.99 1.609-4.977 11.793-18.069 17.23-10.255.457.655 1.541.031 1.08-.633z
     M-290.097 26.476c-1.205-3.195-1.698-6.709-2.191-10.073-.104-.706-1.245-.525-1.228.166.088 3.409 1.227 6.666 1.314 10.073.007.253.184.561.459.603 2.891.436 5.763.436 8.653 0 .795-.12.456-1.324-.332-1.205-2.653.4-5.336.4-7.989 0l.459.603c-.088-3.409-1.227-6.666-1.314-10.073l-1.228.166c.492 3.364.986 6.878 2.191 10.073.282.746 1.491.422 1.206-.333z"/>
     <text transform="translate(-299.458 47.007)" font-family="'MyriadPro-Regular'" font-size="7.007">Timer</text>
-</g>
+</g>-->
 
 <g id="reminderButton" onclick="reminders()" transform="translate(110 180)">
   <!---110 180-->
@@ -75,14 +116,14 @@
     <text transform="matrix(.8709 0 0 1 -254.46 46.65)" font-family="'MyriadPro-Regular'" font-size="7.009">Reminders</text>
 </g>
 
-<g id="calendarButton" onclick="calendar()" transform="translate(22 260)"> <!---22 260-->
+<!--<g id="calendarButton" onclick="calendar()" transform="translate(-600)"> -22 260
       <path onclick="calendar()" fill="#F9DBF2" stroke="#000" stroke-miterlimit="10" d="M-219.272 1.603h48.734v49.389h-48.734z"/>
     <path id="calendar" onclick="calendar()" fill="none" stroke="#000" stroke-width=".5" stroke-miterlimit="10" d="M-213.782 6.384h38.439v31.802h-38.439z                 M-213.782 6.384h37.986v8.972h-37.986zM-208.634 16.2v21.986M-202.64 16.2v20.844M-196.965 15.356v21.688M-191.474 16.2v22.367M-185.64 15.356v22.83   M-180.492 15.356v23.211M-213.782 21.825h37.986M-213.782 27.152h38.439M-213.782 32.098h37.41"/>
     <text onclick="calendar()" transform="matrix(.902 0 0 1 -204.858 47.001)" font-family="'MyriadPro-Regular'" font-size="6.088">Calendar</text>
 
 </g>
 
-<g id="assignmentsButton" onclick="assignments()" transform="translate(-100 260)"> <!-- -100 260-->
+<g id="assignmentsButton" onclick="assignments()" transform="translate(-700)">  -100 260-
       <path onclick="assignments()" fill="#F8F9BD" stroke="#000" stroke-miterlimit="10" d="M-170.698 1.266h51.065v49.726h-51.065z"/>
   <path fill="none" stroke="#000" stroke-width=".5" stroke-miterlimit="10" id="assignments" onclick="assignments()" d="M-148.324 5.685h19.723v31.242h-19.723z              M-161.418 12.896h13.259v24.209h-13.259z"/>
     <path id="assignments" onclick="assignments()" d="M-146.712 13.693c.612 1.546 1.281 3.244 3.027 3.722 1.798.493 2.986-1.679 3.566-2.958l-2.284-.298c1.439 4.001 4.61 4.284 6.925.763l-2.284-.298c.205.489.301.999.287 1.528.016.622.56 1.328 1.25 1.25 1.721-.194 3.355-.93 4.529-2.227 1.079-1.191-.684-2.965-1.768-1.768-.704.777-1.698 1.374-2.762 1.494l1.25 1.25c-.02-.771-.157-1.45-.377-2.193-.316-1.072-1.694-1.196-2.284-.298-.869 1.32-1.786 1.418-2.356-.167-.326-.906-1.795-1.377-2.284-.298-.719 1.585-1.265 1.751-2.025-.167-.586-1.48-3.005-.836-2.41.665zM-145.717 23.927c.378 1.508 1.265 4.031 3.28 3.903 2.099-.133 3.377-1.892 4.308-3.605l-2.284-.298c.569 1.383 1.234 2.662 2.8 3.026 1.15.267 2.947-.992 3.819-.15 1.159 1.12 2.93-.646 1.768-1.768-.77-.743-1.578-1.107-2.659-1.038-1.551.099-2.496 1.257-3.317-.736-.381-.925-1.714-1.348-2.284-.298-.387.712-.794 1.353-1.359 1.939-1.104 1.145-1.457-.832-1.66-1.641-.393-1.562-2.804-.898-2.412.666zM-158.519 20.969c1.341 3.033 4.701 3.624 7.345 1.843 1.329-.895.08-3.062-1.262-2.158-.598.402-1.244.679-1.972.707-1.044.04-1.575-.799-1.953-1.653-.65-1.472-2.804-.199-2.158 1.261zM-158.689 28.246c.002 1.562.193 2.916.833 4.352.383.861 1.748.771 2.158 0 .775-1.456 2.32-2.409 3.315-3.721l-2.329-.631c.03.525.136 1.042.252 1.553.136.601.281 1.699.776 2.121.538.459 1.071.568 1.723.287.172-.074.361-.21.491-.338.04-.041.479-.491.236-.31l-.964.126.045.008-.873-.873.016.084c.297 1.583 2.706.911 2.41-.665l-.016-.083c-.073-.39-.481-.801-.873-.873-.381-.07-.749-.074-1.075.169-.185.137-.299.24-.442.406-.269.308.023-.008.304.013l.884.366c.168.275.177.23.028-.135-.064-.214-.125-.43-.181-.647-.104-.392-.218-.802-.241-1.208-.076-1.318-1.589-1.606-2.329-.631-1.017 1.339-2.508 2.204-3.315 3.721h2.158c-.449-1.009-.489-2.004-.491-3.09-.002-1.613-2.502-1.613-2.5-.001zM-147.249 32.598c2.391 4.018 6.309 4.486 9.256.718h-1.768c2.239 1.786 4.964 2.183 7.481.661 1.378-.832.122-2.995-1.262-2.158-1.477.892-3.062.838-4.452-.271-.479-.383-1.315-.579-1.768 0-1.831 2.34-3.722 2.49-5.33-.212-.822-1.384-2.984-.127-2.157 1.262z"/>
@@ -103,14 +144,15 @@
     <text onclick="accountInfo()" transform="matrix(.9454 0 0 1 -591.787 546.39)" font-family="'MyriadPro-Regular'" font-size="29.683">Account Info</text>
 
     <rect id="setTextBox" fill-opacity="1" fill="#CCC4E3" x="-675" y="564" width="307" height="230"/>
-    <foreignobject x="-665" y="620" width="250" height="100" font-size="14">
+    <foreignobject x="-665" y="570" width="250" height="100" font-size="20">
+      <div id="setTextTitle">
+      </div>
+    </foreignobject>
+    <foreignobject x="-665" y="600" width="250" height="220" font-size="14" float="left" overflow-y = "auto">
       <div id="setText" >
       </div>
     </foreignobject>
-    <foreignobject>
-      <div id="setTextTitle" x="-665" y="600" width="250" height="10" font-size="16">
-      </div>
-    </foreignobject>
+
   </g>
 
 
@@ -215,6 +257,250 @@
 
 
 
+<g id="reminders">
+  <text transform="matrix(.9178 0 0 1 5.817 74.107)" font-family="'NuevaStd-Bold'" font-size="22">REMINDERS</text>
+  <g id="Rem1Info" onclick="editRem(1)">
+  <path id="Rem1" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 81.487h305v33.501h-305z"/>
+    <ellipse fill="#EF3C24" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.16" cy="98.237" rx="5.931" ry="5.75"/>
+      <foreignobject id="RW1" x="30" y="90" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+      <div id="RWi"> </div>
+    </foreignobject>
+  </g>
+  <g id="Rem2Info" onclick="editRem(2)">
+  <path id="Rem2" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 114.249h304.546v33.501H-.148z"/>
+    <ellipse fill="#F79758" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="131.75" rx="5.93" ry="5.75"/>
+      <foreignobject id="RW2" x="30" y="123.4" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+        <div id="RWii"> </div>
+        </foreignobject>
+  </g>
+  <g id="Rem3Info" onclick="editRem(3)">
+  <path id="Rem3" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 148.749h304.546v33.501H-.148z"/>
+    <ellipse onclick="editRem(3)" fill="#F9ED25" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.16" cy="166.5" rx="5.931" ry="5.75"/>
+    <foreignobject id="RW3" x="30" y="157" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+    <div id="RWiii"> </div>
+    </foreignobject>
+  </g>
+  <g id="Rem4Info" onclick="editRem(4)">
+  <path id="Rem4" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 181.249h304.546v33.501H-.148z"/>
+      <ellipse onclick="editRem(4)" fill="#7AC143" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="199.75" rx="5.93" ry="5.75"/>
+      <foreignobject id="RW4" x="30" y="190" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+      <div id="RWiv"> </div>
+      </foreignobject>
+    </g>
+  <g id="Rem5Info" onclick="editRem(5)">
+  <path id="Rem5" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 214.857h304.546v33.501H-.148z"/>
+      <ellipse onclick="editRem(5)" fill="#00895D" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="231.607" rx="5.93" ry="5.75"/>
+      <foreignobject id="RW5" x="30" y="222" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+      <div id="RWv"> </div>
+      </foreignobject>
+    </g>
+  <g id="Rem6Info" onclick="editRem(6)">
+  <path id="Rem6" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 249.406h304.546v33.501H-.148z"/>
+      <ellipse fill="#61CDF6" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="266.157" rx="5.93" ry="5.75"/>
+      <foreignobject id="RW6" x="30" y="257" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+      <div id="RWvi"> </div>
+      </foreignobject>
+    </g>
+  <g id="Rem7Info" onclick="editRem(7)">
+  <path id="Rem7" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 284.328h304.546v33.501H-.148z"/>
+    <ellipse onclick="editRem(7)" fill="#3953A4" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="301.079" rx="5.93" ry="5.75"/>
+    <foreignobject id="RW7" x="30" y="293" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+    <div id="RWvii"> </div>
+    </foreignobject>
+  </g>
+  <g id="Rem8Info" onclick="editRem(8)">
+  <path id="Rem8" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 317.218h304.546v33.501H-.148z"/>
+    <ellipse fill="#915EA7" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="333.969" rx="5.93" ry="5.75"/>
+    <foreignobject id="RW8" x="30" y="326" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+    <div id="RWviii"> </div>
+    </foreignobject>
+  </g>
+  <g id="Rem9Info" onclick="editRem(9)">
+  <path id="Rem9" fill="#E6E7E8" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M-.148 350.772h304.546v33.501H-.148z"/>
+    <ellipse onclick="editRem(9)" fill="#7E63AB" stroke="#000" stroke-width="2" stroke-miterlimit="10" cx="13.161" cy="369.662" rx="5.93" ry="5.75"/>
+    <foreignobject id="RW9" x="30" y="361" font-family="'PlantagenetCherokee'" width="300" height="20" font-size="14" stroke-width="1.5" stroke="#000">
+    <div id="RWix"> </div>
+    </foreignobject>
+  </g>
+</g>
+
+
+
+
+<g id="assignments">
+  <text transform="matrix(.8916 0 0 1 7.378 465.249)" font-family="'NuevaStd-Bold'" font-size="25.5">ASSIGNMENTS</text>
+
+  <path fill="#F1CDE2" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.9 473.991h77.231v32.33H.9z"/>
+    <text transform="matrix(.9204 0 0 1 13.325 494.3)" font-family="'NuevaStd-Bold'" font-size="14">CLASSES</text>
+
+  <path fill="#BED7F0" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 474.275h222.745v32.33H79.582z"/>
+      <text transform="matrix(.9204 0 0 1 89.108 494.3)" font-family="'NuevaStd-Bold'" font-size="14">ASSIGNMENTS/HOMEWORK</text>
+
+
+  <path id="className1" onclick="changeClass(1)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.9 506.89h77.231v32.33H.9z"/>
+      <path id="asName1" onclick="changeAs(1)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 507.174h222.745v32.33H79.582z"/>
+      <text transform="translate(14.166 529.33)" font-family="'OratorStd-Slanted'" font-size="20">Math</text>
+  <path id="className2" onclick="changeClass(2)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 540.687h77.232v32.33H.785z"/>
+    <path id="asName2" onclick="changeAs(2)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 540.387h222.745v32.33H79.582z"/>
+  <path id="className3" onclick="changeClass(3)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 573.585h77.232v32.33H.785z"/>
+      <path id="asName3" onclick="changeAs(3)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 573.285h222.745v32.33H79.582z"/>
+  <path id="className4" onclick="changeClass(4)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 605.915h77.232v32.33H.785z"/>
+      <path id="asName4" onclick="changeAs(4)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 606.631h222.745v32.33H79.582z"/>
+  <path id="className5" onclick="changeClass()" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 638.813h77.232v32.33H.785z"/>
+    <path id="asName5" onclick="changeAs(5)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 638.529h222.745v32.33H79.582z"/>
+  <path id="className6" onclick="changeClass(6)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 672.02h77.232v32.33H.785z"/>
+      <path id="asName6" onclick="changeAs(6)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 671.386h222.745v32.33H79.582z"/>
+  <path id="className7" onclick="changeClass(7)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.785 704.918h77.232v32.33H.785z"/>
+      <path id="asName7" onclick="changeAs(7)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 704.284h222.745v32.33H79.582z"/>
+  <path id="className8" onclick="changeClass(8)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.9 737.886h77.231v32.33H.9z"/>
+    <path id="asName8" onclick="changeAs(8)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 737.886h222.745v32.33H79.582z"/>
+  <path id="className9" onclick="changeClass(9)" fill="#FFF" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M.9 770.784h77.231v32.33H.9z"/>
+    <path id="asName9" onclick="changeAs(9)" fill="#A7A9AC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M79.582 770.784h222.745v32.33H79.582z"/>
+</g>
+
+
+
+
+<g id="calendar">
+  <text transform="matrix(1.0912 0 0 1 315.224 73.722)" font-family="'NuevaStd-Bold'" font-size="22">CALENDAR</text>
+
+  <g id="plusC" onclick="addC()">
+  <path id="plusC" onclick="addC()" fill="#A09BCC" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M546.239 56.688h27.28v22.608h-27.28z"/>
+  <path fill="none" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M560.424 60.508v15.996M549.513 68.505h21.823"/>
+</g>
+
+  <g id="trashC" onclick="deleteC()">
+  <path id="trashC" onclick="deleteC()" fill="#D1C59C" stroke="#000" stroke-width="2" stroke-miterlimit="10" d="M573.52 56.688h36.555v22.625H573.52z"/>
+    <g stroke="#000" stroke-width="2" stroke-miterlimit="10">
+      <path fill="#939598" d="M581.885 61.872h19.277v2.408h-19.277z"/>
+      <path fill="#A7A9AC" d="M584.089 64.28h15.422v13.078h-15.422z"/>
+      <path fill="#939598" d="M590.33 58.625h3.489v2.879h-3.489z"/>
+      <path fill="none" d="M585.466 65.353v11.118M589.872 65.495v11.118M593.819 65.535v11.118M597.858 65.495v11.118"/>
+    </g>
+  </g>
+
+
+  <path id="monthC" fill="#C7E3BC" stroke="#000" stroke-width="4" stroke-miterlimit="10" d="M306.257 81.487h303.817V128H306.257z"/>
+    <text transform="matrix(1.0912 0 0 1 382.644 114.249)" font-family="'Superclarendon-Regular'" font-size="21">NOVEMBER</text>
+
+  <path id="day1" onclick="day(1)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M306.257 128h42.913v38.5h-42.913z"/>
+  <path id="day2" onclick="day(2)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M349.267 128h42.913v38.5h-42.913z"/>
+  <path id="day3" onclick="day(3)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M393.213 128h42.913v38.5h-42.913z"/>
+  <path id="day4" onclick="day(4)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M436.678 128h42.912v38.5h-42.912z"/>
+  <path id="day5" onclick="day(5)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M480.352 128h42.913v38.5h-42.913z"/>
+  <path id="day6" onclick="day(6)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M524.497 128h42.913v38.5h-42.913z"/>
+  <path id="day7" onclick="day(7)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M567.161 128h42.913v38.5h-42.913z"/>
+  <path id="day8" onclick="day(8)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M306 168.084h42.913v38.5H306z"/>
+  <path id="day9" onclick="day(9)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M349.01 168.084h42.913v38.5H349.01z"/>
+  <path id="day10" onclick="day(10)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M392.957 168.084h42.912v38.5h-42.912z"/>
+  <path id="day11" onclick="day(11)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M436.422 168.084h42.911v38.5h-42.911z"/>
+  <path id="day12" onclick="day(12)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M480.096 168.084h42.912v38.5h-42.912z"/>
+  <path id="day13" onclick="day(13)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M524.24 168.084h42.913v38.5H524.24z"/>
+  <path id="day14" onclick="day(14)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M566.904 168.084h42.913v38.5h-42.913z"/>
+  <path id="day15" onclick="day(15)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M306.257 207.072h42.913v38.5h-42.913z"/>
+  <path id="day16" onclick="day(16)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M349.267 207.072h42.913v38.5h-42.913z"/>
+  <path id="day17" onclick="day(17)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M393.213 207.072h42.913v38.5h-42.913z"/>
+  <path id="day18" onclick="day(18)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M436.678 207.072h42.912v38.5h-42.912z"/>
+  <path id="day19" onclick="day(19)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M480.352 207.072h42.913v38.5h-42.913z"/>
+  <path id="day20" onclick="day(20)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M524.497 207.072h42.913v38.5h-42.913z"/>
+  <path id="day21" onclick="day(21)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M567.161 207.072h42.913v38.5h-42.913z"/>
+  <path id="day22" onclick="day(22)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M306.257 246.907h42.913v38.5h-42.913z"/>
+  <path id="day23" onclick="day(23)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M349.267 246.907h42.913v38.5h-42.913z"/>
+  <path id="day24" onclick="day(24)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M393.213 246.907h42.913v38.5h-42.913z"/>
+  <path id="day25" onclick="day(25)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M436.678 246.907h42.912v38.5h-42.912z"/>
+  <path id="day26" onclick="day(26)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M480.352 246.907h42.913v38.5h-42.913z"/>
+  <path id="day27" onclick="day(27)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M524.497 246.907h42.913v38.5h-42.913z"/>
+  <path id="day28" onclick="day(28)" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M567.161 246.907h42.913v38.5h-42.913z"/>
+  <path id="day29" onclick="day(29)" fill="none" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M306.257 285.407h303.817V384H306.257zM306.526 304h303.548"/>
+
+
+  <text transform="matrix(1.0912 0 0 1 314.65 298.318)" font-family="'NuevaStd-Bold'" font-size="14">TODAY IS </text>
+  <text id="calMon" transform="matrix(1.0912 0 0 1 380.65 298.318)" font-family="'NuevaStd-Bold'" font-size="14">DECEMBER</text>
+  <text id="calDay" transform="matrix(1.0912 0 0 1 460.65 298.318)" font-family="'NuevaStd-Bold'" font-size="14">5</text>
+  <text id="calYear" transform="matrix(1.0912 0 0 1 478.65 298.318)" font-family="'NuevaStd-Bold'" font-size="14">2018</text>
+
+  <g id="leftColB" fill="#BED7F0" stroke="#000" stroke-miterlimit="10">
+    <ellipse  cx="317.375" cy="315.083" rx="3.542" ry="2.553"/>
+    <ellipse  cx="317.375" cy="330.083" rx="3.542" ry="2.553"/>
+    <ellipse  cx="317.375" cy="343.083" rx="3.542" ry="2.553"/>
+    <ellipse  cx="317.375" cy="356.522" rx="3.542" ry="2.553"/>
+    <ellipse  cx="317.375" cy="371.522" rx="3.542" ry="2.553"/>
+</g>
+
+  <g id="rightColB" fill="#BED7F0" stroke="#000" stroke-miterlimit="10">
+    <ellipse cx="461.414" cy="313.863" rx="3.542" ry="2.553"/>
+    <path d="M464.957 330.063c0 1.41-1.588 2.553-3.542 2.553-1.957 0-3.545-1.143-3.545-2.553s1.588-2.552 3.545-2.552c1.954 0 3.542 1.142 3.542 2.552z"/>
+    <path d="M464.957 342.863c0 1.41-1.588 2.553-3.542 2.553-1.957 0-3.545-1.143-3.545-2.553s1.588-2.552 3.545-2.552c1.954 0 3.542 1.143 3.542 2.552z"/>
+    <path d="M464.957 356.303c0 1.41-1.588 2.553-3.542 2.553-1.957 0-3.545-1.143-3.545-2.553s1.588-2.552 3.545-2.552c1.954-.001 3.542 1.142 3.542 2.552z"/>
+    <path d="M464.957 371.303c0 1.41-1.588 2.553-3.542 2.553-1.957 0-3.545-1.143-3.545-2.553s1.588-2.552 3.545-2.552c1.954-.001 3.542 1.142 3.542 2.552z"/>
+  </g>
+
+
+
+
+<g id="events" transform="matrix(1.012 0 0 1 0 -200)">
+  <path id="eMake" fill="#D1D3D4" stroke="#000" stroke-width="3" stroke-miterlimit="10" d="M610.097 940.856c0 6.981-5.957 12.644-13.308 12.644H316.291c-7.351 0-13.309-5.662-13.309-12.644V690.989c0-6.983 5.958-12.643 13.309-12.643h280.498c7.351 0 13.308 5.659 13.308 12.643v249.867z"/>
+
+
+  <foreignobject id="eventName" fill="#FFF" stroke="#000" stroke-miterlimit="10" x="325" y="695">
+    <input type="text" id="eventN" value="Event Name" size="28" maxlength="25"/>
+  </foreignobject>
+
+  <text transform="matrix(1.0912 0 0 1 478.838 734.225)" font-family="'Superclarendon-Regular'" font-size="10">ALL DAY</text>
+  <g id="allday">
+  <path fill="#808285" d="M586.348 729.166c0 4.463-3.949 8.082-8.82 8.082h-27.095c-4.871 0-8.82-3.619-8.82-8.082 0-4.465 3.949-8.083 8.82-8.083h27.095c4.87 0 8.82 3.618 8.82 8.083z"/>
+  <path id="allDayBu" onclick="allDay()" fill="#E6E7E8" stroke="#BCBEC0" stroke-miterlimit="10" d="M565.188 728.861c0 4.08-3.609 7.387-8.062 7.387h-7.947c-4.451 0-8.061-3.307-8.061-7.387 0-4.079 3.609-7.386 8.061-7.386h7.947c4.452.001 8.062 3.307 8.062 7.386z"/>
+</g>
+  <path id="timeBox" fill="#FFF" stroke="#000" stroke-miterlimit="10" d="M588.547 788.161c0 4.921-5.862 8.911-13.096 8.911H340.902c-7.231 0-13.095-3.99-13.095-8.911v-34.754c0-4.921 5.863-8.911 13.095-8.911h234.549c7.233 0 13.096 3.99 13.096 8.911v34.754z"/>
+  <text id="eDay" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 338.642 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE, </text>
+  <text id="eMon" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 370.642 760)" font-family="'Superclarendon-Regular'" font-size="9">NOV</text>
+  <text id="eD" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 398.642 760)" font-family="'Superclarendon-Regular'" font-size="9">14,</text>
+  <text id="eYear" onclick="changeDate(1)" transform="matrix(1.0912 0 0 1 417.642 760)" font-family="'Superclarendon-Regular'" font-size="9">2018</text>
+  <text transform="matrix(1.0912 0 0 1 342.46 787)">
+  <tspan id="firstTime" onclick="changeTime(1)" x="0" y="0" font-family="'Superclarendon-Regular'" font-size="29">8:00</tspan>
+  <tspan id="firstTD" onclick="changeTime(1)" x="69.657" y="0" font-family="'Superclarendon-Regular'" font-size="11">AM</tspan>
+  </text>
+
+  <path id="timeArrow" fill="none" stroke="#000" stroke-miterlimit="10" d="M457.021 765.5l12.42 7.716M469.441 773.216L457.631 781"/>
+
+  <text id="eDay2" onclick="changeDate(2)" transform="matrix(1.0912 0 0 1 475.048 760)" font-family="'Superclarendon-Regular'" font-size="9">TUE,</text>
+  <text id="eMon2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 505.048 760)" font-family="'Superclarendon-Regular'" font-size="9">NOV</text>
+  <text id="eD2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 532 760)" font-family="'Superclarendon-Regular'" font-size="9">14, </text>
+  <text id="eYear2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 550 760)" font-family="'Superclarendon-Regular'" font-size="9">2018</text>
+  <text id="time2" onclick="changeTime(2)" transform="matrix(1.0912 0 0 1 479.665 786.95)">
+  <tspan x="0" y="0" font-family="'Superclarendon-Regular'" font-size="29">9:00</tspan>
+  <tspan x="69.367" y="0" font-family="'Superclarendon-Regular'" font-size="11">AM</tspan>
+  </text>
+  <path id="eventStar" onclick="favoriteE()" fill="#B467A9" stroke="#000" stroke-miterlimit="10" d="M583.606 713.474l-7.491-3.244-7.044 3.997.915-7.739-6.215-5.124 8.057-1.54 3.202-7.163 4.065 6.786 8.194.699-5.544 5.733z"/>
+
+  <g id="reminder">
+  <path fill="#8BAFC5" stroke="#000" stroke-miterlimit="10" d="M326.521 803.114h81.415V829h-81.415z"/>
+  <text transform="matrix(1.0912 0 0 1 338.642 819)" font-family="'Superclarendon-Regular'" font-size="9">Reminder:</text>
+  <path id="reminderBox" fill="#AFC5D5" stroke="#000" stroke-miterlimit="10" d="M407.937 803.114h148.409V829H407.937z"/>
+  <path id="arrowBox" onclick="remE()" fill="#A7A9AC" stroke="#000" stroke-miterlimit="10" d="M556.346 803.114h30.002V829h-30.002z"/>
+  <path id="arrowR" onclick="remE()" fill="#58595B" stroke="#000" stroke-miterlimit="10" d="M563.771 810.258h16.583L572.062 822z"/>
+
+  <foreignobject x="410" y="832">
+  <input type="text" id="eventLocation" value="" size="28" maxlength="25" style="color: #000; background-color: #A8C8A5; line-height:1.9em"/>
+  </foreignobject>
+  <path fill="#81B382" stroke="#000" stroke-miterlimit="10" d="M326.521 833.5h81.415v25h-81.415z"/>
+  <text transform="matrix(1.0912 0 0 1 343.006 847.5)" font-family="'Superclarendon-Regular'" font-size="9">Location:</text>
+
+  <path fill="#86839A" stroke="#000" stroke-miterlimit="10" d="M326.779 862.75h81.157V886h-81.157z"/>
+  <text transform="matrix(1.0912 0 0 1 346.825 877.5)" font-family="'Superclarendon-Regular'" font-size="9">Repeat:</text>
+  <foreignobject x="410" y="860">
+  <input style="color=#000; background-color:#A7A4B4; line-height:1.9em" value="" size="28" maxlength="25" />
+</foreignobject>
+
+  <path fill="#C5AF8F" stroke="#000" stroke-miterlimit="10" d="M326.779 890.75h81.157V914h-81.157z"/>
+  <foreignobject x="410" y="890">
+  <input style="background-color:#E4DACB; color: #000; line-height:3.1em" value=""  size="28" maxlength="25"/>
+</foreignobject>
+  <text transform="matrix(1.0912 0 0 1 350.644 904.5)" font-family="'Superclarendon-Regular'" font-size="9">Notes:</text>
+
+</g>
+
+
 
 
 
@@ -233,25 +519,24 @@
   function settings() {
     document.getElementById("svg").setAttribute("viewBox", "-680 400 312 400");
     document.getElementById("settingsButton").setAttribute("transform", "0 0");
-    document.getElementById("timerbutton").setAttribute("transform", "0 0");
+
     document.getElementById("reminderButton").setAttribute("transform", "0 0");
-    document.getElementById("calendarButton").setAttribute("transform", "0 0");
-    document.getElementById("assignmentsButton").setAttribute("transform", "0 0")
+
     document.getElementById("menu").setAttribute("transform", "-275 375");
   }
   function howToUse() {
     document.getElementById("setText").innerHTML=" ";
     document.getElementById("setTextTitle").innerHTML=" ";
     document.getElementById("setTextBox").setAttribute("fill-opacity", "1");
-    document.getElementById("setText").innerHTML="hhhhhhhhhhhhhhhhhhhhhhh";
-    document.getElementById("setTextTitle").innerHTML="jjjjjj";
+    document.getElementById("setTextTitle").innerHTML="<strong>How to Use<strong>";
+    document.getElementById("setText").innerHTML="<b>Timer:<b><br>- Press the plus sign to save your timer.<br>- Click on the star to favorite that specific timer <br>- To change the timer information, click on the timer. <i>A popup should come and you can affect the information through it.<i><br><br><b>Reminders:<b><br>- Press the reminder box to change the information <i>A popup will show and you will be able to change the information from there.<br>";
   }
   function accountInfo() {
     document.getElementById("setText").innerHTML=" ";
     document.getElementById("setTextTitle").innerHTML=" ";
     document.getElementById("setTextBox").setAttribute("fill-opacity", "1");
-    document.getElementById("setText").innerHTML="5555555555555555555555555";
-    document.getElementById("setTextTitle").innerHTML="5555555555555555555";
+    document.getElementById("setText").innerHTML="Username: Tbd";
+    document.getElementById("setTextTitle").innerHTML="<strong>Account Info<strong>";
   }
 
 
@@ -263,7 +548,7 @@
     document.getElementById("reminderButton").setAttribute("transform", "0 0");
     document.getElementById("calendarButton").setAttribute("transform", "0 0");
     document.getElementById("assignmentsButton").setAttribute("transform", "0 0")
-    document.getElementById("menu").setAttribute("transform", "30 375");
+    document.getElementById("menu").setAttribute("transform", "translate(30 375)");
   }
   function timInfo(x) {
     if (x == 1){
@@ -283,7 +568,155 @@
   }
 
 
-</script>
+  function reminders() {
+      document.getElementById("svg").setAttribute("viewBox", "-680 0 1350 1000");
+      document.getElementById("settingsButton").setAttribute("transform", "0 0");
+      document.getElementById("reminderButton").setAttribute("transform", "0 0");
+      document.getElementById("menu").setAttribute("transform", "translate(400 0)");
+    }
 
+  function editRem(r) {
+    if (r == 1){
+      //var rsRem = document.getElementById("RWi");
+      //if (rsRem == " "| rsRem == null){
+      //  var rem = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      //  if (rem == null || rem == "") {
+      //    alert("User cancelled the prompt.");
+      //  }
+      //  else {
+      //    document.getElementById("RWi").innerHTML=rem;
+      //    }
+      //  }
+    //  else {
+    //    var rem = prompt("Please enter the Reminder's Name:", rsRem);
+      //  if (rem == null || rem == "") {
+    //      alert("User cancelled the prompt.");
+      //  }
+      //  else {
+    //      document.getElementById("RWi").innerHTML=rem;
+      //    localStorage.setItem("rsSem", stRem);
+      //    }
+      //  }
+    //  }
+      var rem = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem == null || rem == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWi").innerHTML=rem;
+        }
+      }
+
+
+    else if (r == 2){
+      var rem2 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem2 == null || rem2 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWii").innerHTML=rem2;
+        }
+      }
+
+    else if (r == 3){
+      var rem3 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem3 == null || rem3 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWiii").innerHTML=rem3;
+        }
+      }
+
+    else if (r == 4){
+      var rem4 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem4 == null || rem4 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWiv").innerHTML=rem4;
+        }
+      }
+
+    else if (r == 5){
+      var rem5 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem5 == null || rem5 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWv").innerHTML=rem5;
+        }
+      }
+
+    else if (r == 6){
+      var rem6 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem6 == null || rem6 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWvi").innerHTML=rem6;
+        }
+      }
+
+    else if (r == 7){
+      var rem7 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem7 == null || rem7 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWvii").innerHTML=rem7;
+        }
+      }
+
+    else if (r == 8){
+      var rem8 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem8 == null || rem8 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWviii").innerHTML=rem8;
+        }
+      }
+
+    else if (r == 9){
+      var rem9 = prompt("Please enter the Reminder's Name:", "Get Groceries");
+      if (rem9 == null || rem9 == "") {
+        alert("User cancelled the prompt.");
+      }
+      else {
+        document.getElementById("RWix").innerHTML=rem9;
+        }
+      }
+    }
+
+    function calendar() {
+      document.getElementById("svg").setAttribute("viewBox", "305 0 305 400");
+      document.getElementById("settingsButton").setAttribute("transform", "0 0");
+      document.getElementById("timerbutton").setAttribute("transform", "0 0");
+      document.getElementById("reminderButton").setAttribute("transform", "0 0");
+      document.getElementById("calendarButton").setAttribute("transform", "0 0");
+      document.getElementById("assignmentsButton").setAttribute("transform", "0 0")
+      document.getElementById("menu").setAttribute("transform", "710 0");
+    }
+
+
+    function assignments() {
+      document.getElementById("svg").setAttribute("viewBox", "0 0 305 400");
+      document.getElementById("settingsButton").setAttribute("transform", "0 0");
+      document.getElementById("timerbutton").setAttribute("transform", "0 0");
+      document.getElementById("reminderButton").setAttribute("transform", "0 0");
+      document.getElementById("calendarButton").setAttribute("transform", "0 0");
+      document.getElementById("assignmentsButton").setAttribute("transform", "0 0")
+      document.getElementById("menu").setAttribute("transform", "400 387");
+    }
+
+    function day(d) {
+      document.getElementById("svg").setAttribute("viewBox", "305 400 315 400");
+    }
+
+
+
+
+</script>
 </body>
 </html>
