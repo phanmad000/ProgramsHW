@@ -1,7 +1,23 @@
 <!DOCtype html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>GPA Calculator</title>
+  <script type="text/javascript" src="GPA.js"></script>
+  <h1>GPA Calculator for WAIS Students</h1>
+  <p>Created by Izzy Brunet and Madi Phan</p>
 </head>
-<body>
+
+<body onload="init();">
+  <p>Your GPA (out of 6.5): </p>
+  <textarea id="origGPA"></textarea>   out of 6.5
+
+
+  <br>
+
+  <button id="submit" onclick="clickButton();">Submit</button>
+
+  <p>Calculated GPA out of 4.0: </p>
+  <div id="newGPA"></div>
 </body>
 </html>
