@@ -14,3 +14,4 @@ By Madison Phan
   - Time-Tracking App (Settings and Reminders) (WIP)
 - [GPA Calculator for WAIS Students](https://phanmad000.github.io/ProgramsHW/GPAcalculator.html)
   - A GPA Converter to a 4.0 scale for WAIS Students
+- [Idea Generator](https://phanmad000.github.io/ProgramsHW/ideagenerator.html)
