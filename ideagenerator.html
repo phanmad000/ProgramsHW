@@ -28,10 +28,32 @@
   <text stroke="#000000" transform="matrix(1.8462196273973461,0,0,1.8462196273973461,-102.8166418294397,-193.50002239215183) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_15" y="250.848833" x="135.747811" fill="#000000">Idea Generator</text>
 
 <g id="input1" onclick="input(1)">   
-  <rect id="input1" onclick="input(1)" height="34" width="220" y="322" x="54" stroke-width="2" fill="#cccccc"/>
-  <rect id="input2" onclick="input(2)" height="34" width="220" y="322" x="298" stroke-width="2" fill="#cccccc"/>
-  <rect id="input3" onclick="input(3)" height="34" width="220" y="372" x="54" stroke-width="2" fill="#cccccc"/>
-  <rect id="ipnut4" onclick="input(4)" height="34" width="220" y="372" x="298" stroke-width="2" fill="#cccccc"/>
+  <rect height="34" width="220" y="322" x="54" stroke-width="2" fill="#cccccc"/>
+    <foreignobject id="in1" x="54" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <div id="ina"></div>        
+  </foreignobject>
+</g>
+       
+<g id="input2" onclick="input(2)">   
+  <rect height="34" width="220" y="322" x="298" stroke-width="2" fill="#cccccc"/>
+    <foreignobject id="in2" x="298" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <div id="inb"></div>        
+  </foreignobject>
+   </g>
+ 
+<g id="input3" onclick="input(3)">   
+  <rect height="34" width="220" y="372" x="54" stroke-width="2" fill="#cccccc"/>
+    <foreignobject id="in3" x="54" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <div id="inc"></div>        
+  </foreignobject>
+</g>
+
+<g id="input4" onclick="input(4)">   
+  <rect height="34" width="220" y="372" x="298" stroke-width="2" fill="#cccccc"/>
+    <foreignobject id="in4" x="298" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <div id="ind"></div>        
+  </foreignobject>
+</g>
    
   <ellipse id="redB"  onclick="generate()" stroke="#000000" ry="37.362962" rx="96.999997" id="svg_23" cy="468.800528" cx="290.999997" stroke-opacity="null" stroke-width="2" fill="#ff0000"/>
   <ellipse id="redB2"  onclick="generate()" stroke="#999999" ry="41.555555" rx="101.999999" id="svg_25" cy="468.882011" cx="290.999999" stroke-width="7" fill="none"/>
@@ -47,5 +69,13 @@
 </svg>
 
 <script>
-  
+  function input(r) {
+    var input = prompt("Please enter in a Noun:", "Dragon");
+    if (input == null || rem == "") {
+      alert("User cancelled the prompt.");
+    }
+    else {
+      document.getElementById("ina").innerHTML=input;
+    }
+  }
 </script>
