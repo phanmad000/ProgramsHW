@@ -70,12 +70,25 @@
 
 <script>
   function input(r) {
-    var input = prompt("Please enter in a Noun:", "Dragon");
-    if (input == null || rem == "") {
+    if (word == null || word == "") {
       alert("User cancelled the prompt.");
     }
-    else {
-      document.getElementById("ina").innerHTML=input;
+    else if (r == 1) {
+      var word = prompt("Please enter in a Noun:", "Dragon");
+      document.getElementById("ina").innerHTML = word;
     }
+    else if (r == 2) {
+      var word2 = prompt ("Please enter in a Verb:", "Karate Chop");
+      document.getElementById("inb").innerHTML = word2;
+    }
+    else if (r == 3) {
+      var word3 = prompt ("Please enter in a Noun:", "Sashimi");
+      document.getElementById("inb").innerHTML = word3;
+    }
+    else if (r == 4) {
+      var word4 = prompt ("Please enter in a Verb:", "Twirl");
+      document.getElementById("inb").innerHTML = word4;
   }
 </script>
+  </body>
+  </html>
