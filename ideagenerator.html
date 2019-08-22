@@ -58,8 +58,13 @@
   <ellipse id="redB"  onclick="generate()" stroke="#000000" ry="37.362962" rx="96.999997" id="svg_23" cy="468.800528" cx="290.999997" stroke-opacity="null" stroke-width="2" fill="#ff0000"/>
   <ellipse id="redB2"  onclick="generate()" stroke="#999999" ry="41.555555" rx="101.999999" id="svg_25" cy="468.882011" cx="290.999999" stroke-width="7" fill="none"/>
   <text id="redBtext" onclick="generate()" xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24"y="477.331704" x="227.33252" fill-opacity="null" stroke="#000000" fill="#000000">GENERATE</text>
-   
+
+<g id="output" onclick="generate()">   
   <rect id="output" height="147.999921" width="468" y="529.437579" x="55" stroke-width="2" fill="#aad4ff"/>
+  <foreignobject id="out" x="55" y="529.437579" font-family='PlantagenetCherokee'" width="468" height="147.999921" font-size="14" stroke-width="1.5" stroke="#000">
+  <div id="result"></div>        
+  </foreignobject>
+</g>
    
   <path id="svg_29" d="m350.422023,119.152658c0,-0.613363 0.863501,-1.110177 1.929551,-1.110177c1.06605,0 1.929551,0.496814 1.929551,1.110177c0,0.613343 -0.863501,1.110157 -1.929551,1.110157c-1.06605,0 -1.929551,-0.496814 -1.929551,-1.110157zm3.95558,-7.976601c0,-1.53344 2.158751,-2.775493 4.823882,-2.775493c2.665127,0 4.823878,1.242053 4.823878,2.775493c0,1.533371 -2.158751,2.775444 -4.823878,2.775444c-2.665131,0 -4.823882,-1.242053 -4.823882,-2.775444zm9.165373,-12.093649c0,-4.239555 7.512457,-7.673563 16.787104,-7.673563c9.27462,0 16.787081,3.434008 16.787081,7.673563c0,4.239525 -7.512461,7.673503 -16.787081,7.673503c-9.274647,0 -16.787104,-3.433978 -16.787104,-7.673503zm-14.407319,-34.737357c0,-18.278013 25.732326,-33.083216 57.500629,-33.083216c31.768314,0 57.500629,14.805202 57.500629,33.083216c0,18.278033 -25.732315,33.083216 -57.500629,33.083216c-31.768302,0 -57.500629,-14.805182 -57.500629,-33.083216z" stroke-width="2" fill="#aad4ff"/>
   <path stroke="null" transform="rotate(-179.3751983642578 180.50196838378906,166.7633056640625) " id="svg_30" d="m132.946757,197.276541c0,-0.431331 0.730489,-0.780708 1.632329,-0.780708c0.901839,0 1.632329,0.349377 1.632329,0.780708c0,0.431317 -0.730489,0.780694 -1.632329,0.780694c-0.901839,0 -1.632329,-0.349377 -1.632329,-0.780694zm3.346276,-5.609358c0,-1.078356 1.826223,-1.951799 4.080826,-1.951799c2.254602,0 4.080826,0.873443 4.080826,1.951799c0,1.078307 -1.826223,1.951764 -4.080826,1.951764c-2.254602,0 -4.080826,-0.873443 -4.080826,-1.951764zm7.753567,-8.504578c0,-2.981365 6.355266,-5.396252 14.201272,-5.396252c7.845989,0 14.201255,2.414888 14.201255,5.396252c0,2.981351 -6.355266,5.39621 -14.201255,5.39621c-7.846006,0 -14.201272,-2.414859 -14.201272,-5.39621zm-12.188065,-24.428239c0,-12.853585 21.768609,-23.264997 48.643427,-23.264997c26.874827,0 48.643427,10.411412 48.643427,23.264997c0,12.853606 -21.7686,23.265004 -48.643427,23.265004c-26.874818,0 -48.643427,-10.411398 -48.643427,-23.265004z" stroke-width="2" fill="#aad4ff"/>
@@ -71,23 +76,137 @@
 <script>
   function input(r) {
     if (word == null || word == "") {
-      alert("User cancelled the prompt.");
+      alert("Please put something in.");
     }
     else if (r == 1) {
-      var word = prompt("Please enter in a Noun:", "Dragon");
-      document.getElementById("ina").innerHTML = word;
-    }
+      var word = prompt("Please enter in a letter a-m:", "b");
+      document.getElementById("ina").innerHTML = word.trim;
+      if (word == "a"){
+       var o1 = "former";
+      }
+      else if (word == "b"){
+       var o1 = "powerful";
+          }
+      else if (word == "c"){
+       var o1 = "sorry";
+          }                                   
+      else if (word == "d"){
+       var o1 = "entire";
+          }       
+      else if (word == "e"){
+       var o1 = "additional";
+          }     
+      else if (word == "f"){
+       var o1 = "scared";
+          }  
+      else if (word == "g"){
+       var o1 = "tiny";
+          }   
+      else if (word == "h"){
+       var o1 = "strong";
+          } 
+      else if (word == "i"){
+       var o1 = "useful";
+          }     
+       else if (word == "j"){
+       var o1 = "massive";
+          }   
+      else if (word == "k"){
+       var o1 = "global";
+          }    
+       else if (word == "l"){
+       var o1 = "informal";
+          }          
+       else if (word == "m"){
+       var o1 = "cute";
+          }      
+       else {
+        alert("Please put something in");
+                                       }
+   }
     else if (r == 2) {
-      var word2 = prompt ("Please enter in a Verb:", "Karate Chop");
-      document.getElementById("inb").innerHTML = word2;
+      var word2 = prompt ("Please enter in a number (1-10):", "3");
+      document.getElementById("inb").innerHTML = word2.trim;
+      if (word2 == "1"){
+       var o2 = "program";
+      }
+      else if (word2 == "2"){
+       var o2 = "crash";
+          }
+      else if (word2 == "3"){
+       var o2 = "mess up";
+          }                                   
+      else if (word2 == "4"){
+       var o2 = "fasten";
+          }       
+      else if (word2 == "5"){
+       var o2 = "fire";
+          }     
+      else if (word2 == "6"){
+       var o2 = "discover";
+          }  
+      else if (word2 == "7"){
+       var o2 = "blush";
+          }   
+      else if (word2 == "8"){
+       var o2 = "repeat";
+          } 
+      else if (word2 == "9"){
+       var o2 = "preach";
+          }     
+       else if (word2 == "10"){
+       var o2 = "manifests";
+          }   
+       else {
+         alert("Please put something in");
+                                        }
     }
     else if (r == 3) {
-      var word3 = prompt ("Please enter in a Noun:", "Sashimi");
+      var word3 = prompt ("Please Choose One of the Following Shapes:"<br>"Circle, Triangle, Rhombus, Square, Rectangle, Trapezoid, Hexagon, Heptagon, Octagon, Pyramid", "Pyramid");
       document.getElementById("inb").innerHTML = word3;
+      var word3 = word3.trim;
+      var word3 = word3.lowercase;
+      if (word3 == "circle"){
+       var o2 = "program";
+      }
+      else if (word3 == "triangle"){
+       var o2 = "crash";
+          }
+      else if (word3 == "rhombus"){
+       var o2 = "mess up";
+          }                                   
+      else if (word3 == "square"){
+       var o2 = "fasten";
+          }       
+      else if (word3 == "rectangle"){
+       var o2 = "fire";
+          }     
+      else if (word3 == "trapezoid"){
+       var o2 = "discover";
+          }  
+      else if (word3 == "hexagon"){
+       var o2 = "blush";
+          }   
+      else if (word3 == "heptagon"){
+       var o2 = "repeat";
+          } 
+      else if (word3 == "octagon"){
+       var o2 = "preach";
+          }     
+       else if (word3 == "pyramid"){
+       var o2 = "manifests";
+          }   
+       else {
+         alert("Please put something in");
+                                        }
     }
     else if (r == 4) {
       var word4 = prompt ("Please enter in a Verb:", "Twirl");
-      document.getElementById("inb").innerHTML = word4;
+      document.getElementById("inb").innerHTML = word4.trim;
+    }
+  }    
+  function generate() {
+    var 
   }
 </script>
   </body>
