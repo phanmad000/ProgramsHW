@@ -163,46 +163,82 @@
     }
     else if (r == 3) {
       var word3 = prompt ("Please Choose One of the Following Shapes:"<br>"Circle, Triangle, Rhombus, Square, Rectangle, Trapezoid, Hexagon, Heptagon, Octagon, Pyramid", "Pyramid");
-      document.getElementById("inb").innerHTML = word3;
+      document.getElementById("inc").innerHTML = word3;
       var word3 = word3.trim;
       var word3 = word3.lowercase;
       if (word3 == "circle"){
-       var o2 = "program";
+       var o3 = "program";
       }
       else if (word3 == "triangle"){
-       var o2 = "crash";
+       var o3 = "crash";
           }
       else if (word3 == "rhombus"){
-       var o2 = "mess up";
+       var o3 = "mess up";
           }                                   
       else if (word3 == "square"){
-       var o2 = "fasten";
+       var o3 = "fasten";
           }       
       else if (word3 == "rectangle"){
-       var o2 = "fire";
+       var o3 = "fire";
           }     
       else if (word3 == "trapezoid"){
-       var o2 = "discover";
+       var o3 = "discover";
           }  
       else if (word3 == "hexagon"){
-       var o2 = "blush";
+       var o3 = "blush";
           }   
       else if (word3 == "heptagon"){
-       var o2 = "repeat";
+       var o3 = "repeat";
           } 
       else if (word3 == "octagon"){
-       var o2 = "preach";
+       var o3 = "preach";
           }     
        else if (word3 == "pyramid"){
-       var o2 = "manifests";
+       var o3 = "manifests";
           }   
        else {
          alert("Please put something in");
                                         }
     }
     else if (r == 4) {
-      var word4 = prompt ("Please enter in a Verb:", "Twirl");
-      document.getElementById("inb").innerHTML = word4.trim;
+      var word4 = prompt ("Please choose a subject:"<br>"Math, Social Studies, Science, English, Literature, Music, Theatre, Art, Language, PE");
+      document.getElementById("ind").innerHTML = word4;
+      var word4 = word4.trim;
+      var word4 = word4.lowercase;
+      if (word4 == "math"){
+       var o4 = "program";
+      }
+      else if (word4 == "social studies"){
+       var o4 = "crash";
+          }
+      else if (word4 == "science"){
+       var o4 = "mess up";
+          }                                   
+      else if (word4 == "english"){
+       var o4 = "fasten";
+          }       
+      else if (word4 == "literature"){
+       var o4 = "fire";
+          }     
+      else if (word4 == "music"){
+       var o4 = "discover";
+          }  
+      else if (word4 == "theatre"){
+       var o4 = "blush";
+          }   
+      else if (word4 == "art"){
+       var o4 = "repeat";
+          } 
+      else if (word4 == "language"){
+       var o4 = "preach";
+          }     
+       else if (word4 == "pe"){
+       var o4 = "manifests";
+          }   
+       else {
+         alert("Please put something in");
+                                        }
+    }                                
     }
   }    
   function generate() {
