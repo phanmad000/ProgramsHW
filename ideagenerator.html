@@ -85,7 +85,9 @@
   function input(r) {
     if (r == 1) {
       var word = prompt("Please enter in a letter a-m:", "b");
-      document.getElementById("input1").innerHTML = word.trim;
+      document.getElementById("input1").innerHTML = word;
+      word = trim(word, " ");
+      word = word.lowercase;
       if (word == "a"){
        var o1 = "former";
        document.getElementById("ina").innerHTML =  o1;                        
@@ -145,7 +147,7 @@
     else if (r == 2) {
       var word2 = prompt ("Please enter in a number (1-10):", "3");
       document.getElementById("input2").innerHTML = word2;
-      var word2 = word2.trim;
+      word2 = trim(word2, " ");
       var word2 = word2.lowercase;
       if (word2 == "1"){
        var o2 = "program";
@@ -194,7 +196,7 @@
     else if (r == 3) {
       var word3 = prompt ("Please Choose One of the Following Shapes:                                                    (Circle, Triangle, Rhombus, Square, Rectangle, Trapezoid, Hexagon, Heptagon, Octagon, Pyramid)", "Pyramid");
       document.getElementById("input3").innerHTML = word3;
-      var word3 = word3.trim;
+      word = trim(word, " ");
       var word3 = word3.lowercase;
       if (word3 == "circle"){
        var o3 = "business";
@@ -243,7 +245,7 @@
     else if (r == 4) {
       var word4 = prompt ("Please choose a subject:                                                                       (Math, Social Studies, Science, English, Literature, Music, Theatre, Art, Language, PE)", "math");
       document.getElementById("input4").innerHTML = word4;
-      var word4 = word4.trim;
+      word = trim(word, " ");
       var word4 = word4.lowercase;
       if (word4 == "math"){
        var o4 = "program";
