@@ -27,32 +27,39 @@
   <line stroke-linecap="null" stroke-linejoin="null" id="svg_10" y2="113.770476" x2="287.999999" y1="175.770562" x1="286.999997" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
   <text stroke="#000000" transform="matrix(1.8462196273973461,0,0,1.8462196273973461,-102.8166418294397,-193.50002239215183) " xml:space="preserve" text-anchor="start" font-family="'Times New Roman', Times, serif" font-size="24" id="svg_15" y="250.848833" x="135.747811" fill="#000000">Idea Generator</text>
 
-<g id="input1" onclick="input(1)">   
-  <rect height="34" width="220" y="322" x="54" stroke-width="2" fill="#cccccc"/>
-    <foreignobject id="in1" x="54" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
-  <div id="ina"></div>        
+<g id="firstinput" onclick="input(1)">   
+ <foreignobject id="input1" x="54" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000" fill="#cccccc">
+  <input type="text" id="inputa" value="           Type in here" maxlength="1"/>        
   </foreignobject>
+  <div id="ina">
+               </div>
 </g>
        
 <g id="input2" onclick="input(2)">   
   <rect height="34" width="220" y="322" x="298" stroke-width="2" fill="#cccccc"/>
-    <foreignobject id="in2" x="298" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
-  <div id="inb"></div>        
+    <foreignobject id="input2" x="298" y="322" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <input type="text" id="inputb" value="           Type in here" maxlength="2"/>        
   </foreignobject>
+    <div id="inb">
+               </div>
    </g>
  
 <g id="input3" onclick="input(3)">   
   <rect height="34" width="220" y="372" x="54" stroke-width="2" fill="#cccccc"/>
-    <foreignobject id="in3" x="54" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
-  <div id="inc"></div>        
+    <foreignobject id="input3" x="54" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <input type="text" id="inputc" value="           Type in here" maxlength="15"/>        
   </foreignobject>
+    <div id="ina">
+               </div>
 </g>
 
 <g id="input4" onclick="input(4)">   
   <rect height="34" width="220" y="372" x="298" stroke-width="2" fill="#cccccc"/>
-    <foreignobject id="in4" x="298" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
-  <div id="ind"></div>        
+    <foreignobject id="input4" x="298" y="372" font-family='PlantagenetCherokee'" width="220" height="34" font-size="14" stroke-width="1.5" stroke="#000">
+  <input type="text" id="inputd" value="           Type in here" maxlength="15"/>        
   </foreignobject>
+    <div id="ind">
+               </div>
 </g>
    
   <ellipse id="redB"  onclick="generate()" stroke="#000000" ry="37.362962" rx="96.999997" id="svg_23" cy="468.800528" cx="290.999997" stroke-opacity="null" stroke-width="2" fill="#ff0000"/>
@@ -80,45 +87,58 @@
     }
     else if (r == 1) {
       var word = prompt("Please enter in a letter a-m:", "b");
-      document.getElementById("ina").innerHTML = word.trim;
+      document.getElementById("inputa").innerHTML = word.trim;
       if (word == "a"){
        var o1 = "former";
+       document.getElementbyId("ina").innerHTMl = o1;                        
       }
       else if (word == "b"){
-       var o1 = "powerful";
+       var o1 = "powerful"; 
+       document.getElementbyId("ina").innerHTMl = o1;                          
           }
       else if (word == "c"){
-       var o1 = "sorry";
+       var o1 = "sorry"; 
+       document.getElementbyId("ina").innerHTMl =  o1; 
           }                                   
       else if (word == "d"){
-       var o1 = "entire";
+       var o1 = "entire"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }       
       else if (word == "e"){
-       var o1 = "additional";
+       var o1 = "additional"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }     
       else if (word == "f"){
-       var o1 = "scared";
+       var o1 = "scared"; 
+       document.getElementbyId("ina").innerHTMl =  o1; 
           }  
       else if (word == "g"){
-       var o1 = "tiny";
+       var o1 = "tiny"; 
+       document.getElementbyId("ina").innerHTMl =  o1; 
           }   
       else if (word == "h"){
-       var o1 = "strong";
+       var o1 = "strong"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           } 
       else if (word == "i"){
-       var o1 = "useful";
+       var o1 = "useful"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }     
        else if (word == "j"){
-       var o1 = "massive";
+       var o1 = "massive"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }   
       else if (word == "k"){
-       var o1 = "global";
+       var o1 = "global"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }    
        else if (word == "l"){
-       var o1 = "informal";
+       var o1 = "informal"; 
+       document.getElementbyId("ina").innerHTMl =  o1; 
           }          
        else if (word == "m"){
-       var o1 = "cute";
+       var o1 = "cute"; 
+       document.getElementbyId("ina").innerHTMl = o1; 
           }      
        else {
         alert("Please put something in");
@@ -126,36 +146,46 @@
    }
     else if (r == 2) {
       var word2 = prompt ("Please enter in a number (1-10):", "3");
-      document.getElementById("inb").innerHTML = word2.trim;
+      document.getElementById("inputb").innerHTML = word2.trim;
       if (word2 == "1"){
        var o2 = "program";
+       document.getElementbyId("inb").innerHTMl = o2;
       }
       else if (word2 == "2"){
        var o2 = "crash";
+       document.getElementbyId("inb").innerHTMl = o2;                       
           }
       else if (word2 == "3"){
        var o2 = "mess up";
+       document.getElementbyId("inb").innerHTMl = o2;                         
           }                                   
       else if (word2 == "4"){
        var o2 = "fasten";
+       document.getElementbyId("inb").innerHTMl = o2;                        
           }       
       else if (word2 == "5"){
        var o2 = "fire";
+       document.getElementbyId("inb").innerHTMl = o2;                      
           }     
       else if (word2 == "6"){
        var o2 = "discover";
+       document.getElementbyId("inb").innerHTMl = o2;                          
           }  
       else if (word2 == "7"){
        var o2 = "blush";
+       ocument.getElementbyId("inb").innerHTMl =  o2;                      
           }   
       else if (word2 == "8"){
        var o2 = "repeat";
+       document.getElementbyId("inb").innerHTMl = o2;                        
           } 
       else if (word2 == "9"){
        var o2 = "preach";
+       document.getElementbyId("inb").innerHTMl = o2;                        
           }     
        else if (word2 == "10"){
        var o2 = "manifests";
+       document.getElementbyId("inb").innerHTMl = o2;                           
           }   
        else {
          alert("Please put something in");
@@ -163,38 +193,47 @@
     }
     else if (r == 3) {
       var word3 = prompt ("Please Choose One of the Following Shapes:"<br>"Circle, Triangle, Rhombus, Square, Rectangle, Trapezoid, Hexagon, Heptagon, Octagon, Pyramid", "Pyramid");
-      document.getElementById("inc").innerHTML = word3;
+      document.getElementById("inputc").innerHTML = word3;
       var word3 = word3.trim;
       var word3 = word3.lowercase;
       if (word3 == "circle"){
        var o3 = "program";
       }
       else if (word3 == "triangle"){
-       var o3 = "crash";
+       var o3 = "crash"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }
       else if (word3 == "rhombus"){
-       var o3 = "mess up";
+       var o3 = "mess up"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }                                   
       else if (word3 == "square"){
-       var o3 = "fasten";
+       var o3 = "fasten"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }       
       else if (word3 == "rectangle"){
-       var o3 = "fire";
+       var o3 = "fire"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }     
       else if (word3 == "trapezoid"){
-       var o3 = "discover";
+       var o3 = "discover"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }  
       else if (word3 == "hexagon"){
-       var o3 = "blush";
+       var o3 = "blush"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }   
       else if (word3 == "heptagon"){
-       var o3 = "repeat";
+       var o3 = "repeat"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           } 
       else if (word3 == "octagon"){
-       var o3 = "preach";
+       var o3 = "preach"; 
+       document.getElementbyId("inc").innerHTMl =  o3; 
           }     
        else if (word3 == "pyramid"){
-       var o3 = "manifests";
+       var o3 = "manifests"; 
+       document.getElementbyId("inc").innerHTMl = o3; 
           }   
        else {
          alert("Please put something in");
@@ -202,38 +241,47 @@
     }
     else if (r == 4) {
       var word4 = prompt ("Please choose a subject:"<br>"Math, Social Studies, Science, English, Literature, Music, Theatre, Art, Language, PE");
-      document.getElementById("ind").innerHTML = word4;
+      document.getElementById("inputd").innerHTML = word4;
       var word4 = word4.trim;
       var word4 = word4.lowercase;
       if (word4 == "math"){
        var o4 = "program";
       }
       else if (word4 == "social studies"){
-       var o4 = "crash";
+       var o4 = "crash"; 
+       document.getElementbyId("ind").innerHTMl = o4; 
           }
       else if (word4 == "science"){
-       var o4 = "mess up";
+       var o4 = "mess up"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }                                   
       else if (word4 == "english"){
-       var o4 = "fasten";
+       var o4 = "fasten"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }       
       else if (word4 == "literature"){
-       var o4 = "fire";
+       var o4 = "fire"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }     
       else if (word4 == "music"){
-       var o4 = "discover";
+       var o4 = "discover"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }  
       else if (word4 == "theatre"){
-       var o4 = "blush";
+       var o4 = "blush"; 
+       document.getElementbyId("ind").innerHTMl =  o4;
           }   
       else if (word4 == "art"){
-       var o4 = "repeat";
+       var o4 = "repeat"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           } 
       else if (word4 == "language"){
-       var o4 = "preach";
+       var o4 = "preach"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }     
        else if (word4 == "pe"){
-       var o4 = "manifests";
+       var o4 = "manifests"; 
+       document.getElementbyId("ind").innerHTMl = o4;
           }   
        else {
          alert("Please put something in");
@@ -242,7 +290,8 @@
     }
   }    
   function generate() {
-    var output = document.getElementById("result").innerHTML = o1 + o2 + o3 + o4;
+    var output = ina + inb + inc + ind;
+    document.getElementById("result").innerHTML = output
   }
 </script>
   </body>
