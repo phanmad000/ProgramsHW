@@ -11,6 +11,9 @@ var redsquare;
 var x2;
 var y2;
 
+var catx;
+var caty;
+
 function setup(){
   createCanvas(600, 400);
   noStroke();
@@ -22,6 +25,8 @@ function setup(){
   rect(320,380,20,20);
   bluesquare = "#00f";
   redsquare = "#f00";
+  graphic = loadImage("nope.jpg");
+
 }
 
 function draw(){
@@ -37,8 +42,6 @@ function draw(){
     noStroke();
     fill(bluesquare);
     rect(200, 50, 50, 50);
-
-    graphic = loadImage("../../nope.jpg");
 
   if(mouseIsPressed==true && mouseX<=250 && mouseX>=200 && mouseY<=100 && mouseY>= 50 && col==3){
     click_counter = click_counter + 1;
@@ -59,8 +62,12 @@ function draw(){
     }
     fill("#f00");
     x2 = random(30, 550);
-    y2 = random (30, 300);
+    y2 = random (30, 250);
     rect(x2, y2, 50, 50);
+
+    catx = random(30, 550);
+    caty = random(30, 300);
+    image(graphic, catx, caty, 50, 50);
     bluesquare = "#fff0";
   }
 
@@ -79,10 +86,13 @@ function draw(){
         rect(mouseX+explode*20, mouseY+explode*30, 20 - explode*5, 20 - explode*5);
         rect(mouseX-explode*20, mouseY-explode*30, 20 - explode*5, 20 - explode*5);
         click_counter = 3;
+        catx = random(30, 550);
+        caty = random(30, 300);
+        image(graphic, catx, caty, 50, 50);
       }
     }
 
     redsquare = "#fff0";
   }
-image(graphic, 0, 0);
+
 }
