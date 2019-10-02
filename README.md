@@ -2,7 +2,7 @@
 By Madison Phan
 
 ### Programs
-![Image of Color Calculator](https://octodex.github.com/images/colorcalculator.png)
+![Image of Color Calculator](https://phanmad000.github.com/ProgramsHW/colorcalculator.png)
 - [Color Calculator](https://phanmad000.github.io/ProgramsHW/ColorCalculator)
   - Add colors to find out what color they end up making when put together
   
