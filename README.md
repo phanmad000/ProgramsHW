@@ -2,7 +2,7 @@
 By Madison Phan
 
 ### Programs
-![Image of Color Calculator](https://phanmad000.github.com/ProgramsHW/colorcalculator.png)
+![Image of Color Calculator](https://raw.githubusercontent.com/phanmad000/ProgramsHW/master/colorcalculator.png)
 - [Color Calculator](https://phanmad000.github.io/ProgramsHW/ColorCalculator)
   - Add colors to find out what color they end up making when put together
   
