@@ -1,0 +1,467 @@
+<html>
+<head>
+ <title>IB Credit Calculator</title>
+ <script type="text/javascript" src="tamucalcCP.js"></script>
+<script type="text/javascript" src="smucalc.js"></script>
+ <script type="text/javascript" src="wellesleycalc.js"></script>
+ <script type="text/javascript" src="utcalcDP.js"></script>
+ <script type="text/javascript" src="utcalcCP.js"></script>
+</head>
+
+<body>
+   <h1>Welcome to the IB Credit Calculator!</h1>
+   <p><b>Directions:</b> You will be directed to a page filled with a lot of dropdown menus. This page is the Calculator page where you will enter in your IB scores (or prospective IB scores). Press <b>Submit</b> to see the potential amount of credit you will get from the submitted scores. You will be directed to the <b>Colleges Page</b> where you can choose the college you are looking for the college credit of. Press <b>More Information</b> for links to the college portal and certain parts of the website, Next Steps for the college application and college process in general, links to the degree plans (as well as what degree plans are), and alternative to receiving college credit.</p>
+<p>PLEASE NOTE: This calculator was made with the good intention to help others, but it cannot be held responsible for any potential inaccuracies or unintended consequences. <br><b>THIS CALCULATOR IS NOT SPONSORED BY ANY OF THE LISTED UNIVERSITIES: TEXAS A&M, UNIVERSITY OF TEXAS AT AUSTIN, BAYLOR UNIVERSITY, or WELLESLEY COLLEGE.</b></p>
+<p>***The information will be more specific to the classes our school has to offer.</p>
+
+<form>
+  Please select your IB status:
+  <select id="ib">
+    <option>IB Status</option>
+    <option value="dp">IB Diploma Programme</option>
+    <option value="cp">IB Career-Related Programme</option>
+    <option value="na">Neither</option>
+  </select>
+</form>
+<br>
+<form>
+ Group 1: Language and Literature <br>
+ <select id="langlit">
+   <option>Course Name</option>
+   <option value="English A: Literature SL">English A: Literature SL</option>
+   <option value="English A: Literature HL">English A: Literature HL</option>
+   <option value="English A: Language and Literature SL">English A: Language and Literature SL</option>
+   <option value="English A: Language and Literature HL">English A: Language and Literature HL</option>
+   <option value="Spanish A: Literature SL">Spanish A: Literature SL</option>
+   <option value="Spanish A: Literature HL">Spanish A: Literature HL</option>
+   <option value="Spanish A: Language and Literature SL">Spanish A: Language and Literature SL</option>
+   <option value="Spanish A: Language and Literature HL">Spanish A: Language and Literature HL</option>
+ </select>
+ <select id="llscore">
+   <option>Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(1ll)">x</button>
+<br>
+ <select id="langlit2">
+   <option>Course Name</option>
+   <option value="English A: Literature SL">English A: Literature SL</option>
+   <option value="English A: Literature HL">English A: Literature HL</option>
+   <option value="English A: Language and Literature SL">English A: Language and Literature SL</option>
+   <option value="English A: Language and Literature HL">English A: Language and Literature HL</option>
+   <option value="Spanish A: Literature SL">Spanish A: Literature SL</option>
+   <option value="Spanish A: Literature HL">Spanish A: Literature HL</option>
+   <option value="Spanish A: Language and Literature SL">Spanish A: Language and Literature SL</option>
+   <option value="Spanish A: Language and Literature HL">Spanish A: Language and Literature HL</option>
+ </select>
+ <select id="llscore2">
+   <option value=" ">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(2ll)">x</button>
+ <br>
+</form>
+<form>
+ Group 2: Second Language <br>
+ <select id="language">
+   <option>Course Name</option>
+   <option value="Spanish B ab initio">Spanish B ab initio</option>
+   <option value="Spanish B SL">Spanish B SL</option>
+   <option value="Spanish B HL">Spanish B HL</option>
+   <option value="French B ab initio">French B ab initio</option>
+   <option value="French B SL">French B SL</option>
+   <option value="French B HL">French B HL</option>
+   <option value="German B ab initio">German B ab initio</option>
+   <option value="German B SL">German B SL</option>
+   <option value="Italian B ab initio">Italian B ab initio</option>
+   <option value="Italian B SL">Italian B SL</option>
+   <option value="Italian B HL">Italian B HL</option>
+ </select>
+
+ <select id="langscore">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(1lang)">x</button>
+ <br>
+
+ <select id="language2">
+   <option>Course Name</option>
+   <option value="Spanish B ab initio">Spanish B ab initio</option>
+   <option value="Spanish B SL">Spanish B SL</option>
+   <option value="Spanish B HL">Spanish B HL</option>
+   <option value="French B ab initio">French B ab initio</option>
+   <option value="French B SL">French B SL</option>
+   <option value="French B HL">French B HL</option>
+   <option value="German B ab initio">German B ab initio</option>
+   <option value="German B SL">German B SL</option>
+   <option value="Italian B ab initio">Italian B ab initio</option>
+   <option value="Italian B SL">Italian B SL</option>
+   <option value="Italian B HL">Italian B HL</option>
+ </select>
+
+ <select id="langscore2">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(2lang)">x</button>
+ <br>
+</form>
+
+<form>
+ Group 3: Individuals and Societies <br>
+ <select id="ss">
+   <option value="na">Course Name</option>
+   <option value="History SL">History SL</option>
+   <option value="History HL">History HL</option>
+   <option value="History of Europe/Middle East SL">History of Europe/Middle East SL</option>
+   <option value="History of Europe/Middle East HL">History of Europe/Middle East HL</option>
+   <option value="History of Africa SL">History of Africa SL</option>
+   <option value="History of Africa HL">History of Africa HL</option>
+   <option value="History of Europe SL">History of Europe SL</option>
+   <option value="History of Europe HL">History of Europe HL</option>
+   <option value="History of the Americas SL">History of the Americas SL</option>
+   <option value="History of the Americas HL">History of the Americas HL</option>
+ </select>
+ <select id="historyscore">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(hist)">x</button>
+ <br>
+</form>
+
+<form>
+ Group 4: Experimental Sciences <br>
+ <select id="science">
+   <option>Course Name</option>
+   <option value="Biology SL">Biology SL</option>
+   <option value="Biology HL">Biology HL</option>
+   <option value="Chemistry SL">Chemistry SL</option>
+   <option value="Chemistry HL">Chemistry HL</option>
+   <option value="Physics SL">Physics SL</option>
+   <option value="Physics HL">Physics HL</option>
+   <option value="Computer Science SL">Computer Science SL</option>
+   <option value="Computer Science HL">Computer Science HL</option>
+ </select>
+ <select id="sciencescore">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(science)">x</button>
+ <br>
+ <select id="science2">
+   <option>Course Name</option>
+   <option value="Biology SL">Biology SL</option>
+   <option value="Biology HL">Biology HL</option>
+   <option value="Chemistry SL">Chemistry SL</option>
+   <option value="Chemistry HL">Chemistry HL</option>
+   <option value="Physics SL">Physics SL</option>
+   <option value="Physics HL">Physics HL</option>
+   <option value="Computer Science SL">Computer Science SL</option>
+   <option value="Computer Science HL">Computer Science HL</option>
+ </select>
+ <select id="sciencescore2">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(science2)">x</button>
+ <br>
+ <select id="science3">
+   <option>Course Name</option>
+   <option value="Biology SL">Biology SL</option>
+   <option value="Biology HL">Biology HL</option>
+   <option value="Chemistry SL">Chemistry SL</option>
+   <option value="Chemistry HL">Chemistry HL</option>
+   <option value="Physics SL">Physics SL</option>
+   <option value="Physics HL">Physics HL</option>
+   <option value="Computer Science SL">Computer Science SL</option>
+   <option value="Computer Science HL">Computer Science HL</option>
+ </select>
+ <select id="sciencescore3">
+   <option>Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(science3)">x</button>
+ <br>
+</form>
+
+<form>
+ Group 5: Mathematics <br>
+ <select id="math">
+   <option>Course Name</option>
+   <option value="Math Studies SL">Math Studies SL</option>
+   <option value="Mathematics SL">Mathematics SL</option>
+   <option value="Mathematics HL">Mathematics HL</option>
+   <option value="Further Mathematics HL">Further Mathematics
+
+HL</option>
+ </select>
+ <select id="mathscore">
+   <option>Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(math)">x</button>
+ <br>
+</form>
+
+<form>
+ Group 6: The Arts <br>
+ <select id="art">
+   <option>Course Name</option>
+   <option value="Visual Arts SL">Visual Arts SL</option>
+   <option value="Visual Arts HL">Visual Arts HL</option>
+   <option value="Music SL">Music SL</option>
+   <option value="Music HL">Music HL</option>
+   <option value="Theatre SL">Theatre SL</option>
+   <option value="Theatre HL">Theatre HL</option>
+ </select>
+ <select id="artscore">
+   <option value="na">Test Score</option>
+   <option value="1">1</option>
+   <option value="2">2</option>
+   <option value="3">3</option>
+   <option value="4">4</option>
+   <option value="5">5</option>
+   <option value="6">6</option>
+   <option value="7">7</option>
+ </select>
+ <button style="color:red" type="button" id="delete" onclick="delete(art)">x</button>
+ <br>
+</form>
+
+<br>
+ <button type="button" id="clearall" onclick="deleteAll()">CLEAR ALL</button>
+ <button type="button" id="submit" onclick="collegePage()">SUBMIT ALL</button>
+
+<br>
+<br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<div id="collegePop" class="modal">
+  <div class="modal-content">
+    <?xml version="1.0" encoding="utf-8"?>
+    <!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    <svg id="mysvg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    	 viewBox="0 0 577 284" style="enable-background:new 0 0 577 284;" xml:space="preserve">
+    <style type="text/css">
+    	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+    	.st1{font-family:'Superclarendon-Regular';}
+    	.st2{font-size:30.062px;}
+    	.st3{fill:#EBEBEB;stroke:#000000;stroke-miterlimit:10;}
+    	.st4{fill:#530F06;enable-background:new    ;}
+    	.st5{font-family:'Copperplate';}
+    	.st6{font-size:19px;}
+    	.st7{fill:#F41708;enable-background:new    ;}
+    	.st8{fill:#F58229;enable-background:new    ;}
+    	.st9{fill:#014386;enable-background:new    ;}
+    </style>
+    <rect class="st0" width="577" height="284"/>
+    <text transform="matrix(1.0123 0 0 1 211.8143 40.5514)" class="st1 st2">Colleges</text>
+    <path id="tamu" onclick="tamucalc()" class="st3" d="M251.2,163.1H73.6c-13.3,0-24.2-10.8-24.2-24.2v-26.7
+    	C49.4,98.8,60.2,88,73.6,88h177.7c13.4,0,24.2,10.8,24.2,24.2v26.7C275.4,152.3,264.6,163.1,251.2,163.1z"/>
+    <path id="ut" onclick="jsdeter(ut)" class="st3" d="M251.2,258.3H73.6c-13.3,0-24.2-10.8-24.2-24.2v-26.6
+    	c0-13.4,10.8-24.2,24.2-24.2h177.7c13.4,0,24.2,10.8,24.2,24.2v26.7C275.4,247.5,264.6,258.3,251.2,258.3z"/>
+    <path id="smu" onclick="smucalc()" class="st3" d="M508.2,163.1H330.6c-13.3,0-24.2-10.8-24.2-24.2v-26.7
+    	c0-13.4,10.8-24.2,24.2-24.2h177.7c13.4,0,24.2,10.8,24.2,24.2v26.7C532.4,152.3,521.6,163.1,508.2,163.1z"/>
+    <path id="wc" onclick="wccalc()" class="st3" d="M514.8,263.5H337.2c-13.4,0-24.2-10.8-24.2-24.2v-26.7
+    	c0-13.4,10.8-24.2,24.2-24.2h177.7c13.3,0,24.2,10.8,24.2,24.2v26.7C539,252.7,528.2,263.5,514.8,263.5z"/>
+    <text onclick="tamucalc()" transform="matrix(1 0 0 1 111.4803 118.6015)" class="st4 st5 st6">Texas A&amp;M</text>
+    <text onclick="tamucalc()" transform="matrix(1 0 0 1 111.2103 141.4015)" class="st4 st5 st6">University</text>
+    <text onclick="smucalc()" transform="matrix(1 0 0 1 385.1052 119.2016)" class="st7 st5 st6">Southern Methodist</text>
+    <text onclick="smucalc()" transform="matrix(1 0 0 1 368.2152 142.0016)" class="st7 st5 st6">University</text>
+    <text onclick="jsdeter(ut)" transform="matrix(1 0 0 1 97.2305 213.6015)" class="st8 st5 st6">University of</text>
+    <text onclick="jsdeter(ut)" transform="matrix(1 0 0 1 87.4505 236.4015)" class="st8 st5 st6">Texas at Austin</text>
+    <text onclick="wccalc()" transform="matrix(1 0 0 1 371.8788 221.5217)" class="st9 st5 st6">Wellesley </text>
+    <text onclick="wccalc()" transform="matrix(1 0 0 1 386.4088 244.3217)" class="st9 st5 st6">College</text>
+    </svg>
+</svg>
+</div>
+</div>
+
+
+
+<div id="creditTable" type="modal">
+  <div type="modal-content">
+  <table id="cTableContent" width = "400" cellpadding="10" cellspacing="5" border="1">
+  <tr>
+  <th width="150"></th>
+  <th>Test Score</th>
+  <th width="150">Credit Received</th>
+  <th width="150">Commentary</th>
+  </tr>
+
+  <tr>
+  <th id="llcourse"></th>   <th id="lltest"></th>     <th id="llcredit"></th>   <th id="llcommentary"></th>
+  </tr>
+
+  <tr>
+  <th id="llcourse2"></th>       <th id="lltest2"></th>       <th id="llcredit2"></th> <th id="llcommentary2"></th>  </tr>
+
+  <tr>
+  <th id="langcourse"></th>  <th id="langtest"></th>   <th id="langcredit"></th> <th id="langcommentary"></th></tr>
+
+  <tr>
+  <th id="langcourse2"></th>    <th id="langtest2"></th>  <th id="langcredit2"></th> <th id="llcommentary2"></th> </tr>
+
+  <tr>
+  <th id="histcourse"></th> <th id="histtest"></th>   <th id="histcredit"></th> <th id="histcommentary"></th> </tr>
+
+  <tr>
+  <th id="scicourse"></th>  <th id="scitest"></th>    <th id="scicredit"></th> <th id="scicommentary"></th> </tr>
+
+  <tr>
+  <th id="scicourse2"></th> <th id="scitest2"></th>   <th id="scicredit2"></th> <th id="scicommentary2"></th>  </tr>
+
+  <tr>
+  <th id="scicourse3"></th> <th id="scitest3"></th>   <th id="scicredit3"></th> <th id="scicommentary3"></th> </tr>
+
+  <tr>
+  <th id="mathcourse"></th> <th id="mathtest"></th>   <th id="mathcredit"></th> <th id="mathcommentary"></th></tr>
+
+  <tr>
+  <th id="artcourse"></th>  <th id="arttest"></th>    <th id= "artcredit"></th> <th id="artcommentary"></th> </tr>
+  </table>
+
+  </div>
+  </div>
+
+<div id="moreInfo">
+</div>
+
+<script>
+ function collegePage(){
+   var modal = document.getElementById("collegePop");
+   var btn = document.getElementById("submit");
+   var svg = document.getElementById("mysvg");
+   btn.onclick = function() {
+     modal.style.display = "block";
+   }
+   svg.onclick = function(){
+     modal.style.display = "none";
+   }
+   window.onclick = function(event){
+     if(event.target == modal){
+       modal.style.display = "none";
+     }
+   }
+}
+
+function jsdeter(n){
+  var ibstat = document.getElementById("ib").value;
+  if (ibstat == "dp"){
+      utdpcalc();
+    }
+  else if (ibstat == "cp"){
+      utcpcalc();
+    }
+  else if (ibstat == "na"){
+    alert("Sorry, we have no information for you.");
+  }
+  else {
+    alert('Please choose an IB status, which is located at the top.')
+  }
+}
+
+
+
+</script>
+</body>
+</html>
